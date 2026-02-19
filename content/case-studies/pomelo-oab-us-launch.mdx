@@ -1,0 +1,57 @@
+---
+title: "Online Appointment Booking — US Market Launch"
+company: "Pomelo Health"
+role: "Product Manager"
+date: "2022-06"
+summary: "Led the 0-to-1 US market expansion of Pomelo's patient scheduling platform — adapting a proven Canadian product for US EHR ecosystems, insurance eligibility workflows, and enterprise clinic buyers."
+impact:
+  - "[FILL: N] US clinics live within [FILL: N months] of launch"
+  - "Automated reminders reduced no-shows by [FILL: X%]"
+  - "[FILL: EHR partner] integration shipped, covering [FILL: N%] of target segment"
+tags: ["0-to-1", "market expansion", "healthcare", "B2B SaaS"]
+artifacts:
+  - label: "Case Study One-Pager"
+    file: "/artifacts/pomelo-oab-us-launch/case-study-one-pager.pdf"
+    available: false
+  - label: "US Patient Journey Map"
+    file: "/artifacts/pomelo-oab-us-launch/us-patient-journey.pdf"
+    available: false
+---
+
+## Problem
+
+Pomelo Health had a market-leading patient scheduling suite in Canada — Online Appointment Booking (OAB), automated reminders, and kiosk self-check-in — but no US presence. US specialty clinics were dealing with the same underlying problem: patients calling to book, staff managing schedules manually, and no-show rates costing clinics meaningful revenue per day. The executive team greenlit US expansion and I was the PM responsible for shipping something clinic groups would actually buy.
+
+The challenge wasn't features — it was fit. Canadian healthcare runs on provincial health numbers and a small set of provincial EMRs. US clinics run on insurance eligibility verification, NPI-based provider lookup, and a fragmented EHR/RCM landscape with different vendors, different integration contracts, and different data expectations at every layer.
+
+## Discovery
+
+I ran structured discovery with [FILL: N] clinic administrators, front-desk staff, and IT decision-makers across [FILL: specialties and regions]. Three findings shaped our v1 scope:
+
+**EHR integration is the purchase decision, not the feature set.** Clinic groups wouldn't adopt a new scheduling layer unless it bi-directionally synced with their system of record. A superior patient UX meant nothing if front-desk staff still had to reconcile two systems manually.
+
+**Insurance eligibility at booking is table-stakes.** The Canadian product had no concept of it. Without a prompt to collect or verify coverage, clinics couldn't confidently confirm bookings or reduce liability-related no-shows.
+
+**Automated reminders had the fastest, most legible ROI.** Clinic admins could put a dollar figure on a no-show. A reminder product with a measurable fill-rate improvement was the easiest sales conversation — and the lowest workflow disruption for the clinic team.
+
+## Approach
+
+**Targeted a winnable first segment.** Rather than supporting all US clinic types, v1 scoped to independent specialty clinics running [FILL: target EHR], with [FILL: N–M] providers. One EHR integration, one buyer profile, one success story to replicate.
+
+**Partner API specification.** Authored the partner API requirements doc defining the bi-directional sync contract: appointment data ownership, conflict resolution rules, and data residency requirements. Led technical alignment sessions with the integration partner to get to a signed agreement.
+
+**Functional adaptation for the US.** The Canadian OAB flow needed [FILL: N] substantive changes: insurance eligibility prompting at booking, NPI-based provider lookup, US address and timezone handling, and HIPAA-aligned data handling across booking and reminder flows. Wrote functional annotation documents for each changed flow and ran review cycles with clinic ops leads to catch edge cases before engineering started.
+
+**UX research.** Partnered with the UX team on patient-side and scheduler-side expert evaluations. Used findings to deprioritize cosmetic polish and focus sprint capacity on confirmation flow and reminder flow friction — the two moments most correlated with show rates.
+
+**Go-to-market enablement.** Produced US clinic onboarding guides, front-desk training materials for OAB and reminders, and sales enablement collateral. Worked with sales to select pilot accounts and define measurable success criteria for the initial rollout.
+
+## Outcome
+
+[FILL: Quantitative outcomes — clinics onboarded, no-show reduction, NPS, booking volume, revenue impact, or other relevant metrics]
+
+The automated reminder product became the anchor of the US sales motion. It produced the clearest ROI data and the lowest friction adoption path: clinics could activate reminders without changing their scheduling workflow at all. OAB adoption followed as clinics extended the relationship once reminder results were visible.
+
+## Reflection
+
+[FILL: One honest thing you would do differently — e.g. a scoping trade-off that cost you later, a stakeholder misalignment, a process lesson, or a decision that worked differently than expected]
