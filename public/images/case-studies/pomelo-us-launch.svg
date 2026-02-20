@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <!-- background -->
+  <rect width="600" height="400" fill="#f0faf5"/>
+  <!-- card shadow -->
+  <rect x="122" y="66" width="356" height="268" rx="16" fill="#cce8d8" opacity="0.4"/>
+  <!-- main card -->
+  <rect x="118" y="62" width="356" height="268" rx="16" fill="white" stroke="#c3e0cc" stroke-width="1.5"/>
+  <!-- header bar -->
+  <rect x="118" y="62"  width="356" height="52" rx="16" fill="#16a34a"/>
+  <rect x="118" y="95"  width="356" height="19" fill="#16a34a"/>
+  <!-- header label placeholder -->
+  <rect x="138" y="76" width="80" height="12" rx="4" fill="rgba(255,255,255,0.35)"/>
+  <!-- calendar row 1 -->
+  <circle cx="188" cy="166" r="20" fill="#f0faf5"/>
+  <circle cx="248" cy="166" r="20" fill="#16a34a" opacity="0.9"/>
+  <circle cx="308" cy="166" r="20" fill="#f0faf5"/>
+  <circle cx="368" cy="166" r="20" fill="#f0faf5"/>
+  <circle cx="428" cy="166" r="20" fill="#f0faf5"/>
+  <!-- calendar row 2 -->
+  <circle cx="188" cy="228" r="20" fill="#f0faf5"/>
+  <circle cx="248" cy="228" r="20" fill="#f0faf5"/>
+  <circle cx="308" cy="228" r="20" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <circle cx="368" cy="228" r="20" fill="#16a34a" opacity="0.45"/>
+  <circle cx="428" cy="228" r="20" fill="#f0faf5"/>
+  <!-- calendar row 3 -->
+  <circle cx="188" cy="290" r="20" fill="#f0faf5"/>
+  <circle cx="248" cy="290" r="20" fill="#f0faf5"/>
+  <circle cx="308" cy="290" r="20" fill="#f0faf5"/>
+  <circle cx="368" cy="290" r="20" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <circle cx="428" cy="290" r="20" fill="#f0faf5"/>
+</svg>
