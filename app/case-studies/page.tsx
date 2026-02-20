@@ -30,7 +30,7 @@ const studies = [
       "Productized enterprise deployments with guardrails, integration patterns, rollout gates, and measurable adoption—reducing variability and improving time-to-value.",
     imageSrc: "/images/case-studies/swoop-deployment.svg",
     imageAlt: "Enterprise deployment system architecture diagram",
-    invertLayout: true,
+    invertLayout: false,
     background: "tertiary" as const,
   },
   {

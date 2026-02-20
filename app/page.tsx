@@ -26,7 +26,7 @@ const caseStudies = [
       "Productized enterprise deployments with guardrails, integration patterns, rollout gates, and measurable adoption—reducing variability and improving time-to-value.",
     imageSrc: "/images/case-studies/swoop-deployment.svg",
     imageAlt: "Enterprise deployment system architecture diagram",
-    invertLayout: true,
+    invertLayout: false,
     background: "tertiary" as const,
   },
   {
@@ -126,7 +126,7 @@ export default function Home() {
               0&rarr;1 mandates and scale-up environments into shipped product systems:
               tight ICP, guardrails before sprint one, integration patterns that hold,
               and adoption metrics that prove value.{" "}
-              <Link href="/about" className="text-primary underline underline-offset-2 hover:text-indigo-600 transition-colors">
+              <Link href="/about" className="text-primary underline underline-offset-2 hover:text-accent transition-colors">
                 More about me →
               </Link>
             </p>

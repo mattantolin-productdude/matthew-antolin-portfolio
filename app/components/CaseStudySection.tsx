@@ -65,7 +65,7 @@ export default function CaseStudySection({
 
             <Link
               href={`/case-studies/${slug}`}
-              className="inline-flex h-10 items-center rounded-md bg-primary px-5 text-sm font-medium text-white transition-colors hover:opacity-80"
+              className="inline-flex h-10 items-center rounded-md bg-accent px-5 text-sm font-medium text-white transition-colors hover:opacity-80"
             >
               Read more →
             </Link>
