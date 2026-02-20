@@ -37,7 +37,7 @@ export default function About() {
         <div className="flex flex-col-reverse gap-10 sm:flex-row sm:items-start sm:gap-12">
           {/* Text */}
           <div className="flex-1 min-w-0">
-            <p className="mb-6 text-xs font-semibold uppercase tracking-widest text-accent">
+            <p className="mb-6 text-xs font-semibold uppercase tracking-widest text-mustard">
               About
             </p>
             <h1 className="mb-10 text-3xl font-semibold leading-snug tracking-tight text-zinc-900 sm:text-4xl">
@@ -123,7 +123,7 @@ export default function About() {
             href="https://linkedin.com/in/matthewantolin"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex h-11 items-center justify-center rounded-md bg-accent px-6 text-sm font-medium text-white transition-colors hover:opacity-80"
+            className="inline-flex h-11 items-center justify-center rounded-md bg-mustard px-6 text-sm font-medium text-white transition-colors hover:opacity-80"
           >
             LinkedIn
           </a>

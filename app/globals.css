@@ -8,7 +8,7 @@
   --brand-tertiary:  #F8F8F8;
   --brand-white:     #FFFFFF;
   --brand-border:    #E8E8E8;
-  --brand-accent:    #9B6F00;
+  --brand-mustard:   #9B6F00;
 }
 
 /* ── Tailwind theme extensions ────────────────────────────────────────────── */
@@ -18,6 +18,8 @@
  *   text-secondary, bg-secondary
  *   bg-tertiary, border-tertiary
  *   border-brand
+ *   text-mustard, bg-mustard  (deep mustard #9B6F00 — note: "accent" is
+ *   a reserved Tailwind v4 prefix and cannot be used as a color token name)
  */
 @theme inline {
   --font-sans: var(--font-inter);
@@ -26,7 +28,7 @@
   --color-secondary: var(--brand-secondary);
   --color-tertiary:  var(--brand-tertiary);
   --color-border:    var(--brand-border);
-  --color-accent:    var(--brand-accent);
+  --color-mustard:   var(--brand-mustard);
 }
 
 /* ── Global base ──────────────────────────────────────────────────────────── */

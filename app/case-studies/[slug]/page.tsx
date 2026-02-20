@@ -104,7 +104,7 @@ export default async function CaseStudyPage({ params }: Props) {
             prose-h2:text-xl prose-h2:mt-10 prose-h2:mb-3
             prose-p:text-zinc-600 prose-p:leading-relaxed
             prose-strong:text-zinc-900 prose-strong:font-semibold
-            prose-a:text-accent prose-a:no-underline hover:prose-a:underline
+            prose-a:text-mustard prose-a:no-underline hover:prose-a:underline
             prose-li:text-zinc-600
           "
         >

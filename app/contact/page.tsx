@@ -30,7 +30,7 @@ export default function Contact() {
   return (
     <main className="min-h-screen bg-white font-sans text-zinc-900">
       <section className="mx-auto max-w-2xl px-6 pt-24 pb-28">
-        <p className="mb-6 text-xs font-semibold uppercase tracking-widest text-accent">
+        <p className="mb-6 text-xs font-semibold uppercase tracking-widest text-mustard">
           Contact
         </p>
         <h1 className="mb-4 text-3xl font-semibold leading-snug tracking-tight text-zinc-900 sm:text-4xl">
@@ -56,11 +56,11 @@ export default function Contact() {
                 <p className="text-xs font-semibold uppercase tracking-widest text-zinc-400 mb-1">
                   {label}
                 </p>
-                <p className="text-sm font-medium text-zinc-900 group-hover:text-accent transition-colors">
+                <p className="text-sm font-medium text-zinc-900 group-hover:text-mustard transition-colors">
                   {display}
                 </p>
               </div>
-              <span className="text-zinc-300 group-hover:text-accent/70 transition-colors">
+              <span className="text-zinc-300 group-hover:text-mustard/70 transition-colors">
                 →
               </span>
             </a>

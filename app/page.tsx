@@ -126,7 +126,7 @@ export default function Home() {
               0&rarr;1 mandates and scale-up environments into shipped product systems:
               tight ICP, guardrails before sprint one, integration patterns that hold,
               and adoption metrics that prove value.{" "}
-              <Link href="/about" className="text-primary underline underline-offset-2 hover:text-accent transition-colors">
+              <Link href="/about" className="text-primary underline underline-offset-2 hover:text-mustard transition-colors">
                 More about me →
               </Link>
             </p>
