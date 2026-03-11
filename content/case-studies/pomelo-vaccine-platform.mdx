@@ -1,0 +1,37 @@
+---
+title: "COVID-19 Vaccine Booking Platform — Canada & US Launch"
+company: "Pomelo Health"
+role: "Director of Product"
+date: "2021-04"
+summary: "When the pandemic hit, Pomelo's scheduling platform was built for single-appointment, single-provider clinic workflows. Vaccine deployment broke every assumption. The question wasn't what to build — it was what to build first, and what to defer without creating a compliance or patient safety gap."
+impact:
+  - "6M+ patients served across Canada and the US"
+  - "2,200+ healthcare facilities deployed"
+  - "Walmart Canada (337 locations), Newfoundland & Labrador provincial contract, and US county health deployments"
+  - "9 EMR integrations live at launch"
+  - "Digital proof of immunization and VAERS-compatible adverse reaction reporting delivered at launch"
+tags: ["Healthcare", "Platform Scaling", "Enterprise", "Government", "Privacy by Design", "Scope Sequencing"]
+artifacts: []
+---
+
+When the pandemic hit, Pomelo's scheduling platform was built for single-appointment, single-provider clinic workflows. Vaccine deployment broke every assumption: multi-dose scheduling with precise inter-appointment intervals, mass patient volume, provincial and state reporting obligations, social distancing constraints, and government data requirements — all on a timeline no normal product cycle could accommodate. The question wasn't what to build. It was what to build first, and what to defer without creating a compliance or patient safety gap.
+
+## What I Did
+
+**Sequenced the build around three non-negotiable constraints.** Patient safety (no crowding, controlled flow), dose adherence (multi-booking with automated second-dose reminders), and post-vaccination compliance (digital proof, adverse reaction capture for VAERS) were locked. Educational content, advanced clinic analytics, and portal enhancements were explicitly deferred and documented — to protect the launch window. Every deferral was a decision, not an omission.
+
+**Designed the virtual waiting room as a patient flow problem, not a UX feature.** The real risk was physical crowding at clinic sites. Built predictive queue management with geolocation-based SMS updates so patients only entered when their slot was genuinely ready. Controlled throughput without requiring clinic staff to manage it manually.
+
+**Built privacy and consent into the architecture before launch.** Operating across Canadian provinces and US states with PHI flowing through EMR integrations meant consent, data residency, and access controls had to be structural. Worked through a full Privacy Impact Assessment with EMR partners pre-launch — locking data flow boundaries, consent mechanisms, and audit logging as product requirements, not afterthoughts.
+
+**Rebuilt the scheduling engine for multi-dose complexity.** 21- and 28-day second-dose windows with vaccine-specific eligibility rules, family booking, and inventory tracking — while keeping the patient-facing flow simple enough to work on any device without a download or account.
+
+**Secured enterprise and government adoption through delivery credibility.** Walmart Canada (337 locations), Newfoundland & Labrador provincial contract, and US county health deployments were won on the back of a platform that demonstrably shipped on time and held up under scale.
+
+## Outcome
+
+Launched across Canada and the US during peak pandemic deployment. Platform supported 6M+ patients and 2,200+ healthcare facilities. Delivered digital proof of immunization, adverse reaction reporting, and government-reporting outputs across multiple regulatory jurisdictions — on a timeline that required deliberate scope sequencing at every sprint.
+
+## Reflection
+
+The hardest coordination problem was cross-jurisdictional compliance mapping — manually tracking state-by-state and provincial rule variance. Today I'd use an AI-assisted compliance discovery layer to surface rule conflicts early and automatically flag scope implications, compressing what took weeks of manual research into days. On the patient side, conversational triage for eligibility verification would replace the form-heavy intake flow — reducing drop-off and clinic staff burden simultaneously.

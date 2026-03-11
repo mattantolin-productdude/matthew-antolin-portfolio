@@ -1,152 +1,158 @@
+"use client";
+
 import Link from "next/link";
 
-export const metadata = {
-  title: "About — Matthew Antolin",
-  description:
-    "Product Director building regulated enterprise products in health and pharma SaaS.",
-};
-
-const pillars = [
-  {
-    n: "01",
-    label: "ICP discipline",
-    body: "I start by narrowing the target. Not 'enterprise healthcare' but a specific buyer, stack, and motion. Loose ICP produces deployment chaos — too many one-offs, no replicable playbook. Tight ICP is the highest-leverage PM decision made before the first sprint.",
-  },
-  {
-    n: "02",
-    label: "Guardrails",
-    body: "Before sprint one: define what the product will and won't do, what regulatory constraints apply, and where the failure modes are. In HIPAA-adjacent, formulary-governed, or regulated-content contexts, guardrails aren't bureaucracy — they're the product.",
-  },
-  {
-    n: "03",
-    label: "Integrations",
-    body: "EHR, identity, and data integrations are where enterprise deals are won or stalled. I treat integration design as a first-class PM responsibility: defining the sync contract, sequencing dependencies, aligning stakeholders, and documenting edge cases before engineering starts.",
-  },
-  {
-    n: "04",
-    label: "Measurable adoption",
-    body: "A feature shipped is not a feature adopted. I instrument from day one — activation events, engagement signals, outcome metrics — and define what 'working' looks like before we build it. Success is behavior change, not a release note.",
-  },
-];
-
-export default function About() {
+export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-white font-sans text-zinc-900">
-      {/* Narrative */}
-      <section className="mx-auto max-w-2xl px-6 pt-24 pb-16">
-        <div className="flex flex-col-reverse gap-10 sm:flex-row sm:items-start sm:gap-12">
-          {/* Text */}
-          <div className="flex-1 min-w-0">
-            <p className="mb-6 text-xs font-semibold uppercase tracking-widest text-mustard">
+    <main className="min-h-screen bg-[#F2F1EF] text-[#1a1a1a]">
+
+      {/* ── HERO ─────────────────────────────────────────────────────────── */}
+      <section className="bg-[#1a1a1a]">
+        <div className="mx-auto max-w-5xl px-10 md:px-16 pt-28 pb-14 flex flex-col md:flex-row items-center gap-10 md:gap-16">
+
+          {/* Left - text */}
+          <div className="flex-1 flex flex-col gap-6">
+            <span
+              className="text-xs tracking-[0.25em] uppercase font-medium"
+              style={{ color: "#9A7B2E" }}
+            >
               About
-            </p>
-            <h1 className="mb-10 text-3xl font-semibold leading-snug tracking-tight text-zinc-900 sm:text-4xl">
-              Regulated enterprise builder.<br />
-              Systems thinker. Execution discipline.
+            </span>
+
+            <h1
+              className="text-4xl font-semibold leading-[1.15] tracking-tight text-white sm:text-5xl"
+              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            >
+              Regulated Enterprise Builder. Systems Thinker. Execution Discipline.
             </h1>
 
-            <div className="flex flex-col gap-5 text-base leading-relaxed text-zinc-600">
-              <p>
-                I&rsquo;m a Product Director based in Montreal, currently leading
-                Swoop Agents — a conversational AI product for pharma brand
-                websites. Before that I led product at conversationHEALTH and
-                Pomelo Health, across EHR integrations, patient scheduling, and
-                analytics infrastructure.
-              </p>
-              <p>
-                I work best at the intersection of enterprise complexity and
-                execution discipline. Regulated environments — healthcare, pharma,
-                life sciences — have constraints most products don&rsquo;t: compliance
-                guardrails, fragmented EHR ecosystems, enterprise procurement cycles,
-                and buyers who&rsquo;ve been burned before. I treat those constraints as
-                product design inputs, not obstacles.
-              </p>
-              <p>
-                My track record is in 0&rarr;1 and scale-up contexts: turning
-                ambiguous mandates into shipped systems that hold up after launch.
-                Not feature-factory output — durable product work with measurable
-                adoption and the operational infrastructure to expand.
-              </p>
-              <p>
-                I&rsquo;m targeting VP Product or Director Product roles in regulated
-                enterprise SaaS — health IT, pharma digital enablement, or adjacent.
-                Based in Montreal; open to Canada/US remote and willing to relocate
-                for the right fit.
-              </p>
-            </div>
           </div>
 
-          {/* Photo */}
-          <div className="shrink-0 sm:w-52">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/matt.png"
-              alt="Matthew Antolin"
-              className="w-full rounded-xl grayscale object-cover object-top aspect-square"
-            />
-          </div>
         </div>
       </section>
 
-      {/* How I work */}
-      <section className="mx-auto max-w-2xl px-6 pb-16">
-        <h2 className="mb-8 text-xs font-semibold uppercase tracking-widest text-zinc-400">
-          How I work
-        </h2>
-        <div className="flex flex-col gap-px border border-zinc-100 rounded-lg overflow-hidden">
-          {pillars.map((p) => (
-            <div
-              key={p.n}
-              className="flex gap-6 bg-white px-6 py-5 border-b border-zinc-100 last:border-b-0"
-            >
-              <span className="mt-0.5 shrink-0 text-xs font-semibold tabular-nums text-zinc-300">
-                {p.n}
-              </span>
-              <div>
-                <p className="mb-1.5 text-sm font-semibold text-zinc-900">
-                  {p.label}
-                </p>
-                <p className="text-sm leading-relaxed text-zinc-500">{p.body}</p>
+      {/* ── ABOUT CONTENT ────────────────────────────────────────────────── */}
+      <section className="max-w-2xl mx-auto px-6 md:px-8 py-24 flex flex-col gap-8">
+
+        <p className="text-lg leading-relaxed text-[#3a3a3a]">
+          I treat compliance constraints, fragmented EHR ecosystems, and enterprise procurement
+          cycles as product design inputs, not obstacles. Most regulated environments have been
+          burned by products that shipped but didn&rsquo;t stick. My track record is in the other
+          direction: 0&rarr;1 and scale-up contexts where ambiguous mandates become durable systems
+          with measurable adoption and the operational infrastructure to expand.
+        </p>
+
+        <p className="text-lg leading-relaxed text-[#3a3a3a]">
+          I&rsquo;ve led product at Swoop, conversationHEALTH, and Pomelo Health, across
+          conversational AI, EHR integrations, patient scheduling, and analytics infrastructure.
+          A decade in healthcare, pharma, and life sciences.
+        </p>
+
+        <p className="text-lg leading-relaxed text-[#3a3a3a]">
+          I&rsquo;m based in Montreal, targeting VP Product or Director Product roles in regulated
+          enterprise SaaS. Open to Canada/US remote; willing to relocate for the right fit.
+        </p>
+      </section>
+
+      {/* ── HOW I WORK ───────────────────────────────────────────────────── */}
+      <section className="bg-[#1a1a1a] py-24 px-6 md:px-16">
+        <div className="max-w-5xl mx-auto">
+
+          {/* Section label */}
+          <span
+            className="block text-xs tracking-[0.25em] uppercase font-medium mb-12"
+            style={{ color: "#9A7B2E" }}
+          >
+            How I Work
+          </span>
+
+          {/* Cards grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+            {[
+              {
+                num: "01",
+                title: "ICP Discipline",
+                body:
+                  "I start by narrowing the target. Not 'enterprise healthcare' but a specific buyer, stack, and motion. Loose ICP produces deployment chaos: too many one-offs, no replicable playbook. Tight ICP is the highest-leverage PM decision made before the first sprint.",
+              },
+              {
+                num: "02",
+                title: "Guardrails",
+                body:
+                  "Before sprint one: define what the product will and won't do, what regulatory constraints apply, and where the failure modes are. In HIPAA-adjacent, formulary-governed, or regulated-content contexts, guardrails aren't bureaucracy; they're the product.",
+              },
+              {
+                num: "03",
+                title: "Deployment Architecture",
+                body:
+                  "Enterprise products fail in the gap between signed contract and live deployment. I design the onboarding motion, integration contracts, and rollout gates before sprint one, so the first deployment becomes the template, not the exception.",
+              },
+              {
+                num: "04",
+                title: "Measurable Adoption",
+                body:
+                  "A feature shipped is not a feature adopted. I instrument from day one: activation events, engagement signals, outcome metrics, and define what 'working' looks like before we build it. Success is behavior change, not a release note.",
+              },
+            ].map((card) => (
+              <div
+                key={card.num}
+                className="rounded-2xl p-8 flex flex-col gap-4 border border-white/10 hover:border-[#9A7B2E]/40 transition-colors duration-300"
+                style={{ backgroundColor: "#242424" }}
+              >
+                <span className="text-xs font-mono text-[#9A7B2E] tracking-widest">
+                  {card.num}
+                </span>
+                <h3 className="text-white text-xl font-bold">{card.title}</h3>
+                <p className="text-[#aaa] leading-relaxed text-sm">{card.body}</p>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* Links */}
-      <section className="mx-auto max-w-2xl px-6 pb-28">
-        <h2 className="mb-5 text-xs font-semibold uppercase tracking-widest text-zinc-400">
-          Links
-        </h2>
-        <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-          <a
-            href="https://linkedin.com/in/matthewantolin"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex h-11 items-center justify-center rounded-md bg-mustard px-6 text-sm font-medium text-white transition-colors hover:opacity-80"
-          >
-            LinkedIn
-          </a>
-          <a
-            href="/resume.pdf"
-            className="inline-flex h-11 items-center justify-center rounded-md border border-zinc-300 px-6 text-sm font-medium text-zinc-700 transition-colors hover:bg-zinc-50"
-          >
-            Download resume
-          </a>
-          <a
-            href="/positioning-brief.pdf"
-            className="inline-flex h-11 items-center justify-center rounded-md border border-zinc-300 px-6 text-sm font-medium text-zinc-700 transition-colors hover:bg-zinc-50"
-          >
-            Positioning brief
-          </a>
-          <Link
-            href="/"
-            className="inline-flex h-11 items-center justify-center rounded-md border border-zinc-300 px-6 text-sm font-medium text-zinc-700 transition-colors hover:bg-zinc-50"
-          >
-            ← Back
-          </Link>
+      {/* ── LINKS ────────────────────────────────────────────────────────── */}
+      <section className="bg-[#F2F1EF] py-20 px-6">
+        <div className="max-w-2xl mx-auto flex flex-col items-start gap-6">
+          <span className="text-xs tracking-[0.25em] uppercase font-medium text-[#9A7B2E]">
+            Links
+          </span>
+          <div className="flex flex-wrap gap-3">
+            <a
+              href="https://www.linkedin.com/in/matthew-antolin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 rounded-full text-sm font-semibold text-white transition-opacity hover:opacity-80"
+              style={{ backgroundColor: "#9A7B2E" }}
+            >
+              LinkedIn
+            </a>
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 rounded-full text-sm font-semibold border border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white transition-colors duration-200"
+            >
+              Download resume
+            </a>
+            <a
+              href="/positioning-brief.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 rounded-full text-sm font-semibold border border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white transition-colors duration-200"
+            >
+              Positioning brief
+            </a>
+            <Link
+              href="/case-studies"
+              className="px-6 py-3 rounded-full text-sm font-semibold border border-[#ccc] text-[#888] hover:text-[#1a1a1a] hover:border-[#1a1a1a] transition-colors duration-200"
+            >
+              ← Back to Work
+            </Link>
+          </div>
         </div>
       </section>
+
     </main>
   );
 }

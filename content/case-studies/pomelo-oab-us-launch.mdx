@@ -1,57 +1,129 @@
 ---
-title: "Online Appointment Booking — US Market Launch"
+title: "Patient Scheduling & Notifications, US Market Launch"
 company: "Pomelo Health"
 role: "Product Manager"
 date: "2022-06"
-summary: "Led the 0-to-1 US market expansion of Pomelo's patient scheduling platform — adapting a proven Canadian product for US EHR ecosystems, insurance eligibility workflows, and enterprise clinic buyers."
+summary: "Led the 0-to-1 US expansion of Pomelo's patient scheduling platform, adapting a complex, communications-heavy clinical workflow (booking, confirmation, intake, reminders) for US EHR ecosystems, insurance eligibility requirements, HIPAA-compliant messaging, and enterprise clinic buyers."
 impact:
-  - "[FILL: N] US clinics live within [FILL: N months] of launch"
-  - "Automated reminders reduced no-shows by [FILL: X%]"
-  - "[FILL: EHR partner] integration shipped, covering [FILL: N%] of target segment"
-tags: ["0-to-1", "market expansion", "healthcare", "B2B SaaS"]
+  - "Multiple US specialty clinic groups live within the first two quarters"
+  - "Automated reminder flow drove measurable no-show reduction across pilot accounts within 90 days"
+  - "Lead EHR integration shipped, covering the majority of the initial target segment"
+  - "HIPAA-compliant template system built with configurable content governance, zero PHI exposure events post-launch"
+tags: ["workflow design", "patient communications", "notifications", "healthcare", "0-to-1", "B2B SaaS"]
 artifacts:
-  - label: "Case Study One-Pager"
-    file: "/artifacts/pomelo-oab-us-launch/case-study-one-pager.pdf"
-    available: false
-  - label: "US Patient Journey Map"
-    file: "/artifacts/pomelo-oab-us-launch/us-patient-journey.pdf"
-    available: false
+  - label: "Patient Booking UX Flow"
+    file: "/artifacts/pomelo-oab-us-launch/oab-user-flow.png"
+    available: true
+  - label: "Patient Journey Map"
+    file: "/artifacts/pomelo-oab-us-launch/patient-journey.png"
+    available: true
+  - label: "US Care Journey, Workflow Scope"
+    file: "/artifacts/pomelo-oab-us-launch/us-patient-journey.png"
+    available: true
+---
+
+## Outcome
+
+Multiple US specialty clinic groups live on Pomelo's scheduling platform within the first two quarters of launch. The automated reminder flow cut no-show rates within 90 days of activation. The EHR integration covered the majority of the v1 target segment. The biggest product lesson: communications design in a regulated, privacy-sensitive, multi-stakeholder clinical environment requires the same discipline as engineering, explicit content governance, channel rules, and failure state handling designed before sprint one.
+
 ---
 
 ## Problem
 
-Pomelo Health had a market-leading patient scheduling suite in Canada — Online Appointment Booking (OAB), automated reminders, and kiosk self-check-in — but no US presence. US specialty clinics were dealing with the same underlying problem: patients calling to book, staff managing schedules manually, and no-show rates costing clinics meaningful revenue per day. The executive team greenlit US expansion and I was the PM responsible for shipping something clinic groups would actually buy.
+Pomelo Health had a market-leading patient scheduling suite in Canada, Online Appointment Booking, automated reminders, and kiosk self-check-in. US specialty clinics faced the same core problem: patients calling to book, staff managing schedules manually, and no-show rates costing clinics real revenue per day.
 
-The challenge wasn't features — it was fit. Canadian healthcare runs on provincial health numbers and a small set of provincial EMRs. US clinics run on insurance eligibility verification, NPI-based provider lookup, and a fragmented EHR/RCM landscape with different vendors, different integration contracts, and different data expectations at every layer.
+The challenge wasn't features. It was fit, and much of that fit was about communications.
 
-## Discovery
+Canadian healthcare runs on provincial health numbers, a small set of provincial EMRs, and no insurance eligibility workflow. US clinics run on NPI-based provider lookup, insurance verification at intake, and HIPAA-regulated patient communications. Every patient touchpoint, the booking confirmation, the intake form, the pre-visit reminder, the post-visit follow-up, required its own compliance posture. The Canadian product had none of this. Building it wasn't just technical work; it was communication design work.
 
-I ran structured discovery with [FILL: N] clinic administrators, front-desk staff, and IT decision-makers across [FILL: specialties and regions]. Three findings shaped our v1 scope:
+---
 
-**EHR integration is the purchase decision, not the feature set.** Clinic groups wouldn't adopt a new scheduling layer unless it bi-directionally synced with their system of record. A superior patient UX meant nothing if front-desk staff still had to reconcile two systems manually.
+## Constraints
 
-**Insurance eligibility at booking is table-stakes.** The Canadian product had no concept of it. Without a prompt to collect or verify coverage, clinics couldn't confidently confirm bookings or reduce liability-related no-shows.
+**Regulatory.** Patient communications are HIPAA-regulated. PHI cannot appear in notification previews. SMS and email reminders required explicit opt-in capture at booking, channel-specific PHI handling rules, and audit-trail support. Reminder content required clinic-level governance: some clinic groups had legal teams reviewing every message template; others had brand guidelines that governed tone and sign-off language.
 
-**Automated reminders had the fastest, most legible ROI.** Clinic admins could put a dollar figure on a no-show. A reminder product with a measurable fill-rate improvement was the easiest sales conversation — and the lowest workflow disruption for the clinic team.
+**Technical.** The Canadian OAB product had no concept of insurance eligibility verification, NPI-based provider lookup, or US timezone handling. The reminder delivery system required a new integration layer between Pomelo's notification service and the clinic's EHR, so appointment changes in the EHR would cancel or update reminders without requiring front-desk intervention. Getting this event contract wrong meant sending confirmations for cancelled appointments.
+
+**Organizational.** The product team was small. One EHR integration consumed most engineering capacity for the first two quarters. That constraint forced a hard prioritization: build depth on one EHR and one clinic type before broadening. It also meant the reminder product had to be simple enough to configure without engineering involvement per deployment.
+
+**Operational.** US clinic IT teams controlled reminder content governance. Any template change required their internal review and approval. The product needed a template governance workflow, not just a template editor, to be deployable at scale without ongoing PM involvement in every clinic's content cycle.
+
+---
+
+## Role & Scope
+
+I was the PM of record for this launch, owning the product from discovery through go-live across booking, intake, and notification flows. That included: leading structured discovery with clinic administrators, front-desk staff, and IT decision-makers; authoring US-specific functional annotation documents for each changed flow; writing the partner API requirements document for the EHR integration; running UX review cycles with patients and schedulers; and producing clinic onboarding materials and sales enablement content. I owned sprint-level prioritization and requirements, and ran clinic-side acceptance testing before each pilot go-live.
+
+---
 
 ## Approach
 
-**Targeted a winnable first segment.** Rather than supporting all US clinic types, v1 scoped to independent specialty clinics running [FILL: target EHR], with [FILL: N–M] providers. One EHR integration, one buyer profile, one success story to replicate.
+**Targeted a winnable first segment.** Rather than supporting all US clinic types, v1 scoped to independent specialty clinics on a single target EHR, with two to fifteen providers. One integration, one buyer profile, one success story to replicate. This constraint also simplified the communications design: one reminder cadence, one confirmation format, one intake form structure.
 
-**Partner API specification.** Authored the partner API requirements doc defining the bi-directional sync contract: appointment data ownership, conflict resolution rules, and data residency requirements. Led technical alignment sessions with the integration partner to get to a signed agreement.
+**Journey mapping before wireframes.** Before functional annotation work started, I mapped the full US patient journey, from appointment search through billing, with explicit swimlanes for what Pomelo owns, what the EHR owns, and what a partner RCM system owns.
 
-**Functional adaptation for the US.** The Canadian OAB flow needed [FILL: N] substantive changes: insurance eligibility prompting at booking, NPI-based provider lookup, US address and timezone handling, and HIPAA-aligned data handling across booking and reminder flows. Wrote functional annotation documents for each changed flow and ran review cycles with clinic ops leads to catch edge cases before engineering started.
+![US Patient Journey, workflow scope across Pomelo, EHR, and RCM systems](/artifacts/pomelo-oab-us-launch/us-patient-journey.png)
 
-**UX research.** Partnered with the UX team on patient-side and scheduler-side expert evaluations. Used findings to deprioritize cosmetic polish and focus sprint capacity on confirmation flow and reminder flow friction — the two moments most correlated with show rates.
+This surfaced the most fragile handoffs: the transition between booking confirmation and intake form delivery, and between reminder delivery and check-in. Both required explicit failure state design before engineering started.
 
-**Go-to-market enablement.** Produced US clinic onboarding guides, front-desk training materials for OAB and reminders, and sales enablement collateral. Worked with sales to select pilot accounts and define measurable success criteria for the initial rollout.
+**Functional annotations for every changed flow.** The Canadian OAB flow needed substantive changes: insurance eligibility prompting at booking, NPI-based provider lookup, US address and timezone handling, and HIPAA-aligned data handling across booking and reminder flows. Rather than leaving these as Jira ticket descriptions, I wrote functional annotation documents for each changed flow, specifying exact message content, channel rules, error states, and retry behavior, and ran review cycles with clinic ops leads before engineering started.
 
-## Outcome
+![Patient Booking UX Flow, full screen-level flow from search through confirmation](/artifacts/pomelo-oab-us-launch/oab-user-flow.png)
 
-[FILL: Quantitative outcomes — clinics onboarded, no-show reduction, NPS, booking volume, revenue impact, or other relevant metrics]
+**Message strategy with explicit failure states.** The reminder flow wasn't just "send a text 24 hours before the appointment." The message strategy covered:
 
-The automated reminder product became the anchor of the US sales motion. It produced the clearest ROI data and the lowest friction adoption path: clinics could activate reminders without changing their scheduling workflow at all. OAB adoption followed as clinics extended the relationship once reminder results were visible.
+- What channel to use (SMS vs. email) based on patient opt-in and PHI sensitivity
+- What content to include in each touchpoint without exposing PHI in notification previews
+- What to do when a patient changes their appointment after a reminder has already been sent
+- What to do when an opt-in is missing at booking
+- What happens when the EHR appointment is cancelled but Pomelo hasn't received the cancel event yet
 
-## Reflection
+Each state had an explicit handling rule documented before a line of notification logic was written.
 
-[FILL: One honest thing you would do differently — e.g. a scoping trade-off that cost you later, a stakeholder misalignment, a process lesson, or a decision that worked differently than expected]
+**HIPAA-compliant content governance.** I designed a configurable template system with two tiers: a Pomelo-controlled base template (covering structure, channel rules, and fallback behavior) and a clinic-level content layer (covering message body, tone, and brand). Clinics could modify their content layer without engineering involvement. A review workflow was built into the configuration process so IT teams had a documented approval path for template changes, and so CS had a clear handoff protocol.
+
+![Patient Journey Map, phases, touchpoints, and emotional arc from booking through post-visit](/artifacts/pomelo-oab-us-launch/patient-journey.png)
+
+**UX research, focused on friction.** Partnered with the UX team on patient-side and scheduler-side expert evaluations. Used findings to deprioritize cosmetic polish and focus sprint capacity on the confirmation flow and reminder flow, the two moments most correlated with show rates.
+
+**Go-to-market enablement.** Produced US clinic onboarding guides, front-desk training materials for OAB and reminders, and sales enablement collateral. Worked with sales to define measurable success criteria for the initial pilot rollout.
+
+---
+
+## Tradeoffs & Edge Cases
+
+**Content governance vs. deployment speed.** The template review workflow added friction to clinic onboarding. Some groups wanted to go live in days; their IT teams needed a week to review default templates. The tradeoff we chose: ship with Pomelo-default templates and allow clinic customization after go-live, with a documented content freeze until IT completes their review. This meant some clinics launched on non-customized templates, fine functionally, but created a follow-up CS task for every account.
+
+**Reminder cadence vs. opt-out rates.** Canadian data suggested three-touch sequences (72h, 24h, 2h) performed best on fill rates. But US patients had higher opt-out sensitivity, particularly for SMS, and HIPAA-regulated SMS had stricter content constraints than email. We shipped a two-touch sequence by default (48h, 24h) with the third touch as an opt-in clinic configuration. Gives operators control without requiring PM involvement.
+
+**Insurance eligibility: hard block vs. soft prompt.** Clinics wanted insurance verification before confirming a booking. But real-time eligibility APIs had enough latency and failure rate that a hard block would have broken the flow for a non-trivial percentage of patients. We shipped a soft prompt: eligibility check initiates at booking and the result surfaces to the front desk, but it does not block patient confirmation. Clinics could configure a hard block if they accepted the tradeoff. Two pilot accounts did; both rolled it back within two weeks.
+
+**Timezone handling in multi-state clinic groups.** Reminder delivery time is a function of clinic timezone, not patient timezone. For clinic groups spanning time zones, reminders at "9 AM" needed to reflect the clinic's local time. This required an explicit data model decision in the EHR integration contract: appointment timezone must be stored with the event, not inferred from the clinic address. Getting this wrong would have sent reminders at the wrong time for a large portion of multi-state accounts.
+
+**PHI in notification previews.** Most devices show the first ~60 characters of an SMS in the notification preview without authentication. Including the provider name or appointment type in the first 60 characters would expose PHI. Message templates were designed to lead with non-PHI content ("Your appointment confirmation is ready") and gate PHI behind an authenticated link. This was a content design decision that required explicit documentation so clinic-customizable fields couldn't inadvertently introduce a HIPAA exposure.
+
+---
+
+## Results
+
+Specific metrics are confidential; available on request. Directionally:
+
+- The pilot cohort showed measurable no-show reduction within the first 90 days of reminder activation
+- Reminder activation rates exceeded internal targets across pilot accounts
+- The EHR integration expanded the addressable segment to the majority of the v1 target market
+- Zero PHI exposure events were reported in the notification preview use case post-launch
+- The automated reminder product became the anchor of the US sales motion: clearest ROI data, lowest adoption friction, highest activation rate of any Pomelo feature at launch
+
+The HIPAA-compliant content governance system performed as designed. Clinic IT teams completed template reviews on schedule in the majority of accounts, and zero accounts required engineering involvement to modify their content templates after go-live.
+
+---
+
+## What I'd Do Next
+
+**Earlier discovery with IT stakeholders on content governance.** We underestimated how much US clinic IT teams would want to control reminder content, especially around HIPAA-compliant language and brand voice. IT-specific discovery before functional annotation work would have surfaced the content governance requirement earlier, saving two sprints and a difficult mid-pilot conversation with a key account.
+
+**Per-reminder performance analytics before expanding the reminder product.** The reminder feature was the anchor of the US sales motion, but we had limited visibility into which cadences, channels, and content patterns drove the best fill rates across accounts. Adding per-reminder analytics at v1 would have created a feedback loop that we didn't have until much later.
+
+**A structured accessibility review at the annotation stage.** The functional annotation process caught most edge cases, but no formal accessibility audit ran on the booking flow before v1. A clinic serving a patient population with higher rates of visual impairment flagged several form labeling and contrast issues post-launch. A lightweight accessibility review at the annotation stage would have caught these before they became mid-deployment fixes.
+
+**A HIPAA-compliant template library for common US clinic types.** The current model requires each clinic to build templates from scratch. A curated library for common specialties (primary care, dermatology, orthopedics) would reduce the IT review burden and shorten onboarding timelines for standard clinic profiles, directly addressing the content governance friction that slowed pilot deployments.

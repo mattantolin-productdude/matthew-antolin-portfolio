@@ -2,49 +2,61 @@ import CaseStudySection from "@/app/components/CaseStudySection";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Work — Matthew Antolin",
+  title: "Work - Matthew Antolin",
   description: "Case studies in regulated enterprise healthcare and pharma SaaS.",
 };
 
 const studies = [
   {
     slug: "swoop-piper-ai-agent",
-    year: "2024",
+
     logoSrc: "/images/logos/swoop.svg",
     logoAlt: "Swoop",
-    title: "Conversational Analytics for Pharma Brand Teams",
+    title: "Conversational Analytics Agent for Pharma Brand Teams",
     description:
-      "Built an analytics layer on first-party conversations to surface demand signals, content gaps, and adoption insights for regulated brand teams.",
-    imageSrc: "/images/case-studies/swoop-analytics.svg",
-    imageAlt: "Swoop Analytics — conversational analytics interface",
+      "Pharma brand teams were locked out of their own agent data, buried in monthly analyst-assembled reports. Built a conversational analytics product that lets brand managers query first-party conversation data on-demand, moving from lag reporting to real-time decision support.",
+    imageSrc: "/images/case-studies/swoop-analytics.png",
+    imageAlt: "Swoop Piper conversational analytics interface",
     invertLayout: false,
-    background: "white" as const,
   },
   {
     slug: "swoop-deployment-system",
-    year: "2023",
+
     logoSrc: "/images/logos/conversationhealth.svg",
     logoAlt: "conversationHEALTH",
-    title: "Enterprise Deployment System — Regulated AI at Scale",
+    title: "Regulated AI at Scale: GTM Positioning, Trust Architecture & Deployment Standards",
     description:
-      "Productized enterprise deployments with guardrails, integration patterns, rollout gates, and measurable adoption—reducing variability and improving time-to-value.",
-    imageSrc: "/images/case-studies/swoop-deployment.svg",
-    imageAlt: "Enterprise deployment system architecture diagram",
+      "No standard for 'launch-ready' existed across pharma brand deployments. Built the compliance boundary, intake process, and release discipline that cut deployment time from 90 days to 3 weeks, and became the trust infrastructure that supported the acquisition.",
+    imageSrc: "/images/case-studies/swoop-deployment.png",
+    imageAlt: "Regulated AI at scale: deployment system",
     invertLayout: false,
-    background: "tertiary" as const,
+    divider: true,
   },
   {
-    slug: "pomelo-oab-us-launch",
-    year: "2022",
+    slug: "pomelo-vaccine-platform",
+
     logoSrc: "/images/logos/pomelo.svg",
     logoAlt: "Pomelo Health",
-    title: "Patient Scheduling & Notifications — US Market Launch",
+    title: "COVID-19 Vaccine Booking Platform: Canada & US Launch",
     description:
-      "Led 0→1 US expansion of online appointment booking, adapting workflows for US EHR ecosystems and insurance eligibility while enabling a repeatable rollout motion.",
-    imageSrc: "/images/case-studies/pomelo-us-launch.svg",
-    imageAlt: "Pomelo Health patient scheduling platform",
+      "A clinic scheduling platform built for single appointments had to support mass multi-dose vaccine deployment. Sequenced the build around patient safety, dose adherence, and compliance reporting, delivering across 6M patients, 2,200+ facilities, and two countries under pandemic conditions.",
+    imageSrc: "/images/case-studies/pomelo-vaccine.png",
+    imageAlt: "Pomelo vaccine booking platform",
     invertLayout: false,
-    background: "white" as const,
+    divider: true,
+  },
+  {
+    slug: "pomelo-product-org",
+
+    logoSrc: "/images/logos/pomelo.svg",
+    logoAlt: "Pomelo Health",
+    title: "Building the Product Organization: First Hire to Full Org, Series A Through Acquisition",
+    description:
+      "Joined as the first product hire with no PM practice and a founder-led roadmap. Over six years built the team, operating cadence, and architecture decisions that took the company from Series A ($3.5M) to Series B ($20M) to acquisition by TELUS Health.",
+    imageSrc: "/images/case-studies/pomelo-product-org.png",
+    imageAlt: "Pomelo Health product organization",
+    invertLayout: false,
+    divider: true,
   },
 ];
 
@@ -53,12 +65,12 @@ export default function CaseStudiesPage() {
     <main className="min-h-screen font-sans">
 
       {/* Page header */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-5xl px-6 pt-16 pb-12">
-          <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-secondary">
+      <section style={{ backgroundColor: "#1a1a1a" }}>
+        <div className="mx-auto max-w-5xl px-6 pt-28 pb-14">
+          <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-amber">
             Work
           </p>
-          <h1 className="text-3xl font-semibold leading-snug tracking-tight text-primary sm:text-4xl">
+          <h1 className="text-3xl font-semibold leading-snug tracking-tight text-white sm:text-4xl">
             Selected case studies
           </h1>
         </div>

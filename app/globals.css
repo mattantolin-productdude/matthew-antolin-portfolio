@@ -8,27 +8,21 @@
   --brand-tertiary:  #F8F8F8;
   --brand-white:     #FFFFFF;
   --brand-border:    #E8E8E8;
-  --brand-mustard:   #9B6F00;
+  --brand-amber:     #9A7B2E;
+  --brand-teal:      #1a6b6b;
 }
 
 /* ── Tailwind theme extensions ────────────────────────────────────────────── */
-/*
- * Exposes brand tokens as Tailwind utilities:
- *   text-primary, bg-primary, border-primary
- *   text-secondary, bg-secondary
- *   bg-tertiary, border-tertiary
- *   border-brand
- *   text-mustard, bg-mustard  (deep mustard #9B6F00 — note: "accent" is
- *   a reserved Tailwind v4 prefix and cannot be used as a color token name)
- */
 @theme inline {
-  --font-sans: var(--font-inter);
+  --font-sans:    var(--font-inter);
+  --font-display: var(--font-playfair);
 
   --color-primary:   var(--brand-primary);
   --color-secondary: var(--brand-secondary);
   --color-tertiary:  var(--brand-tertiary);
   --color-border:    var(--brand-border);
-  --color-mustard:   var(--brand-mustard);
+  --color-amber:     var(--brand-amber);
+  --color-teal:      var(--brand-teal);
 }
 
 /* ── Global base ──────────────────────────────────────────────────────────── */
@@ -50,4 +44,9 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Display typography ───────────────────────────────────────────────────── */
+h1 {
+  font-family: var(--font-display), 'Georgia', 'Times New Roman', serif;
 }

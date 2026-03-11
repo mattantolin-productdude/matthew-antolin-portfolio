@@ -1,51 +1,34 @@
 ---
-title: "Piper — Conversational Analytics Agent for Pharma Brand Teams"
+title: "Conversational Analytics Agent for Pharma Brand Teams"
 company: "Swoop"
-role: "Product Manager"
+role: "Director, Product Management"
 date: "2024-09"
-summary: "Led product development for Piper, Swoop's AI analytics agent — giving pharma brand teams natural-language access to HCP and DTC website engagement data and automating the monthly reporting workflow that previously required significant analyst time."
+summary: "Pharma brand teams were sitting on rich agent conversation data and couldn't use it. Surfacing insights required pulling raw logs, running analyst queries, and assembling monthly PPTX decks by hand — slow, expensive, and always a reporting cycle behind. I bet on conversation-first over dashboard-first, and that bet was the product."
 impact:
-  - "Piper launched across multiple pharma brand clients with DTC and HCP agent types"
-  - "Automated monthly PPTX report generation replaced multi-hour manual analyst reporting cycles"
-  - "Coverage rate, topic clustering, and resolution tracking surfaced in real time via conversational interface"
-tags: ["AI/ML", "B2B SaaS", "analytics", "pharma", "conversational AI"]
-artifacts:
-  - label: "Case Study One-Pager"
-    file: "/artifacts/swoop-piper-ai-agent/case-study-one-pager.pdf"
-    available: false
-  - label: "Agent Evaluation Framework"
-    file: "/artifacts/swoop-piper-ai-agent/agent-evaluation-framework.pdf"
-    available: false
+  - "Brand teams moved from analyst-mediated monthly reporting to on-demand self-service analytics"
+  - "Automated PPTX pipeline made standard monthly reviews zero-analyst-effort"
+  - "HVA CTA work opened a direct line from analytics insights to client campaign optimization"
+  - "Model evaluation framework gave the team a repeatable, documented process for AI version decisions"
+tags: ["AI/ML", "Pharma", "Analytics", "Conversational AI", "B2B SaaS"]
+artifacts: []
 ---
 
-## Problem
+Pharma brand teams were sitting on rich agent conversation data and couldn't use it. Surfacing insights required pulling raw logs, running analyst queries, and assembling monthly PPTX decks by hand — slow, expensive, and always a reporting cycle behind the decisions that needed to be made. The core tension: the people who most needed performance visibility were the least equipped to query raw data. I bet on conversation-first over dashboard-first, and that bet was the product.
 
-Pharma manufacturers run AI agents on their DTC and HCP brand websites — answering patient and prescriber questions about dosing, coverage, side effects, and access programs. These agents handle thousands of inquiries per month. The brand and commercial teams managing them had no efficient way to answer the questions that mattered most: Is our agent performing well? What are patients and HCPs actually asking? Which inquiries are going unresolved? Are users reaching high-value actions like finding a prescriber or requesting a sample?
+## What I Did
 
-The data existed. But surfacing it required pulling raw conversation logs, running analyst queries, and assembling monthly PPTX decks by hand — a cycle that was slow, expensive, and disconnected from the pace at which brand teams needed to act.
+**Chose conversation over dashboard — and iterated to find the right prompts.** Brand managers didn't want to query data. They wanted to ask follow-up questions. The version that worked led with outcomes ("Is my agent covering the questions patients actually have?") rather than metrics.
 
-## Discovery
+**Automated the monthly PPTX reporting cycle.** Built an automated pipeline that runs monthly by brand and agent pair. Eliminated the analyst reporting cycle for standard monthly reviews — shifted analyst time from assembly to interpretation and action.
 
-I ran discovery with pharma brand managers, commercial analytics leads, and medical affairs stakeholders across multiple manufacturer accounts. The core tension was consistent: the people who most needed performance visibility — brand managers deciding which agent responses to update, which topics to escalate — were the least equipped to query raw data themselves. Analysts were the bottleneck, and monthly cadences meant brand teams were always acting on stale information.
+**Scoped data access strictly per-brand, per-agent.** Manufacturer → brand → agent type hierarchy enforced in navigation and access. Prevented cross-brand data governance issues that would have killed enterprise adoption before it started.
 
-A secondary finding shaped the product architecture: brand teams didn't just want dashboards. They wanted to ask follow-up questions. "What percentage of those unresolved inquiries came from HCPs versus patients?" "Show me the top five external links clicked in August." Static dashboards couldn't support that. Conversational access could.
-
-## Approach
-
-**Conversational analytics interface.** Built the Piper Data Analyst agent — a natural-language interface scoped per drug brand and agent type (DTC, HCP). Users start from curated conversation prompts that represent the most common brand team questions, or ask their own. Piper queries the underlying engagement data and returns structured analysis: coverage rates, topic distributions, resolution rates, desired outcome click-throughs.
-
-**Automated report generation.** Built an automated PPTX report pipeline that runs monthly per brand/agent pairing and makes reports available for download directly in the Piper UI. This eliminated the analyst reporting cycle for standard monthly reviews and shifted analyst time toward interpretation and action rather than assembly.
-
-**Per-brand, per-agent architecture.** Structured the product around the natural hierarchy of the pharma market: manufacturer → brand → agent type (DTC vs. HCP). Each brand team sees only their own agent data. Navigation and agent context are scoped accordingly, with separate agent instances and report streams for DTC and HCP channels.
-
-**High-Value Action (HVA) CTA serving.** Developed a PRD for serving contextually relevant CTAs to users of the brand's website agents based on conversation intent — surfacing "Find a Specialist" or "Request a Sample" links at the right moment in the conversation flow rather than as static sidebar elements. This connected Piper's analytics insights directly back to agent optimization.
-
-**AI model evaluation framework.** As Piper's underlying models evolved, I needed a structured way to assess whether a new model version was better or worse before shipping to clients. Built a multi-step agent version comparator covering prompt input collection, topic clustering, difference and gap analysis, QA test-result evaluation, and impact scoring — giving the team a repeatable, documented process for model change decisions rather than ad hoc vibes-based comparisons.
+**Built a model evaluation framework to make AI version decisions repeatable.** A multi-step comparator covering prompt collection, topic clustering, gap analysis, and impact scoring — giving the team a documented, repeatable process instead of vibes-based comparisons.
 
 ## Outcome
 
-Specific client metrics are confidential. Directionally: brand teams moved from monthly analyst-mediated reporting to on-demand self-service analytics. The automated report pipeline made standard monthly reviews zero-analyst-effort. The Data Analyst agent saw repeat usage from brand managers who had previously never directly accessed engagement data. The HVA CTA work opened a new product surface that gave Swoop a more direct line to client campaign optimization decisions.
+Brand teams moved from analyst-mediated monthly reporting to on-demand self-service analytics. Automated pipeline made standard monthly reviews zero-analyst-effort. HVA CTA work opened a direct line from analytics insights to client campaign optimization decisions.
 
 ## Reflection
 
-The hardest design problem wasn't the analytics itself — it was the conversation starter UX. Brand managers are not data analysts, and a blank chat interface is intimidating in a way that a dashboard isn't. Getting the starter prompts right required several rounds of iteration with real users: too abstract and they didn't map to actual decisions; too specific and they felt like someone else's questions. The version that worked best led with outcomes ("Is my agent covering the questions patients actually have?") rather than metrics ("Show me coverage rate"). It was a small UX decision with outsized impact on adoption, and I wouldn't have gotten there without treating the starter prompt set as a first-class product artifact rather than a launch afterthought.
+The model evaluation framework I built was manual by necessity. Today I'd instrument a continuous evaluation pipeline that runs model comparisons on a representative prompt set automatically on every model update, surfacing regressions before they reach clients. The conversation starter UX iteration loop — which took multiple rounds with real users — could be accelerated with synthetic user testing against representative brand manager personas, compressing weeks of qualitative research into days.

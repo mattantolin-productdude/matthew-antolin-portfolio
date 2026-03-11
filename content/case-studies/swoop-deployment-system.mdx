@@ -1,0 +1,34 @@
+---
+title: "Regulated AI at Scale — GTM Positioning, Trust Architecture & Deployment Standards"
+company: "ConversationHealth"
+role: "Senior Director, Product"
+date: "2023-06"
+summary: "ConversationHealth deployed conversational AI on pharma brand websites — every deployment effectively a custom product. The GTM problem and the product problem were the same problem: without a trust architecture pharma clients could point to, we couldn't sell repeatability. And without repeatability, we couldn't scale."
+impact:
+  - "End-to-end deployment time dropped from ~90 days to 3 weeks"
+  - "MLR review cycle dropped from ~4 weeks to under 1 week"
+  - "Compliance boundary, intake process, and release discipline turned bespoke delivery into a repeatable motion"
+  - "Trust architecture became the foundation that supported the acquisition and integration"
+tags: ["Regulated AI", "Pharma", "GTM", "Compliance", "Release Management", "Enterprise"]
+artifacts: []
+---
+
+ConversationHealth deployed conversational AI on pharma brand websites — answering patient and HCP questions about dosing, insurance coverage, side effects, and access programs. Every deployment was effectively a custom product: different drug, different brand team, different regulatory stakeholder set. The GTM problem and the product problem were the same problem: without a trust architecture that pharma clients could point to, we couldn't sell repeatability. And without repeatability, we couldn't scale.
+
+## What I Did
+
+**Defined what the product would and wouldn't do — and made that a selling point.** In regulated AI, guardrails aren't a limitation — they're the product. Codified the compliance boundary: what topics the agent could address, what triggered a fallback, what required MLR review, and what was off-limits. This was the trust infrastructure that made enterprise deals closeable.
+
+**Built the deployment intake process from failure patterns backward.** Ran a retrospective across recent deployments and found three recurring failure modes: MLR surprises mid-sprint, mid-cycle change requests, and undefined launch criteria. Designed the intake template so every failure mode had a field.
+
+**Standardized the release note as the single communication artifact.** Defined a standard release note format with a compliance dimension, review-and-approval sequence, and client notification protocol. Reduced the review cycle from ~4 weeks to under 1 week.
+
+**Formalized the cross-functional release discipline.** Release notes drafted → internal review → CS notified → release proceeds. Removed the calendar negotiation that had previously preceded every non-trivial release.
+
+## Outcome
+
+End-to-end deployment time dropped from ~90 days to 3 weeks — without rebuilding the product. The compliance boundary, intake process, and release discipline turned bespoke delivery into a repeatable motion that GTM could sell and ops could execute. MLR review cycle dropped from ~4 weeks to under 1 week. The trust architecture established here became the foundation that supported the acquisition and integration.
+
+## Reflection
+
+The compliance boundary work — mapping approved topics, fallback triggers, and MLR implications per drug per brand — was entirely manual. Today I'd build an AI-assisted compliance scoping tool that takes drug labeling documents and brand brief inputs and auto-generates a draft approved topic list, flagging ambiguous areas for human review. This compresses the pre-launch intake process from days to hours and surfaces regulatory edge cases earlier — before they become mid-sprint surprises. The trust architecture doesn't change. The speed at which you instantiate it per deployment does.

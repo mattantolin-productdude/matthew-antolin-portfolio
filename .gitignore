@@ -39,3 +39,17 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Working / reference documents (not part of the deployed site)
+Attachments/
+POV-Frameworks-Methodology/
+Prompt\ library/
+Reference\ Market\ intelligence/
+portfolio_director_brief.md
+matthew-case-studies.pdf
+matthew-case-studies-with-visuals.html
+
+# Loose source images in the root (move to public/ when ready to use)
+/*.png
+/*.jpg
+/*.jpeg
