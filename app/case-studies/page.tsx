@@ -8,15 +8,15 @@ export const metadata: Metadata = {
 
 const studies = [
   {
-    slug: "swoop-piper-ai-agent",
+    slug: "swoop-conversational-analytics-agent",
 
     logoSrc: "/images/logos/swoop.svg",
     logoAlt: "Swoop",
-    title: "Conversational Analytics Agent for Pharma Brand Teams",
+    title: "Conversational Analytics Agent for Pharma Brand Transcript Data",
     description:
-      "Pharma brand teams were locked out of their own agent data, buried in monthly analyst-assembled reports. Built a conversational analytics product that lets brand managers query first-party conversation data on-demand, moving from lag reporting to real-time decision support.",
+      "Pharma brand teams were locked out of their own agent data, buried in monthly analyst-assembled reports. Built a conversational analytics agent — with one data engineer — that lets brand managers query first-party transcript data on-demand, moving from lag reporting to direct self-service insights.",
     imageSrc: "/images/case-studies/swoop-analytics.png",
-    imageAlt: "Swoop Piper conversational analytics interface",
+    imageAlt: "Swoop conversational analytics interface",
     invertLayout: false,
   },
   {
@@ -24,11 +24,11 @@ const studies = [
 
     logoSrc: "/images/logos/conversationhealth.svg",
     logoAlt: "conversationHEALTH",
-    title: "Regulated AI at Scale: GTM Positioning, Trust Architecture & Deployment Standards",
+    title: "From Implementation-Heavy to Self-Serve: Platform Shift & Deployment Discipline at conversationHEALTH",
     description:
-      "No standard for 'launch-ready' existed across pharma brand deployments. Built the compliance boundary, intake process, and release discipline that cut deployment time from 90 days to 3 weeks, and became the trust infrastructure that supported the acquisition.",
+      "conversationHEALTH was the US market leader in conversational AI for pharma, built on NLP/NLU with 90-day deployments. Led the platform generation shift to self-serve — including therapeutic area templating, compliance guardrails, and a product-engineering philosophy — cutting time-to-value to 3 weeks.",
     imageSrc: "/images/case-studies/swoop-deployment.png",
-    imageAlt: "Regulated AI at scale: deployment system",
+    imageAlt: "conversationHEALTH deployment system",
     invertLayout: false,
     divider: true,
   },
@@ -39,7 +39,7 @@ const studies = [
     logoAlt: "Pomelo Health",
     title: "COVID-19 Vaccine Booking Platform: Canada & US Launch",
     description:
-      "A clinic scheduling platform built for single appointments had to support mass multi-dose vaccine deployment. Sequenced the build around patient safety, dose adherence, and compliance reporting, delivering across 6M patients, 2,200+ facilities, and two countries under pandemic conditions.",
+      "A clinic scheduling platform built for single appointments had to support mass multi-dose vaccine deployment. Sequenced the build around patient safety, dose adherence, and compliance reporting — delivering across Walmart Canada (337 locations), government contracts in Newfoundland & Labrador and Quebec, and US county health deployments.",
     imageSrc: "/images/case-studies/pomelo-vaccine.png",
     imageAlt: "Pomelo vaccine booking platform",
     invertLayout: false,

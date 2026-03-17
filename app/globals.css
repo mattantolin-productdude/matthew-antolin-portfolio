@@ -14,8 +14,8 @@
 
 /* ── Tailwind theme extensions ────────────────────────────────────────────── */
 @theme inline {
-  --font-sans:    var(--font-inter);
-  --font-display: var(--font-playfair);
+  --font-sans:    var(--font-barlow);
+  --font-display: var(--font-barlow);
 
   --color-primary:   var(--brand-primary);
   --color-secondary: var(--brand-secondary);
@@ -40,7 +40,7 @@ html {
 body {
   background-color: var(--brand-white);
   color: var(--brand-primary);
-  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  font-family: var(--font-barlow), system-ui, -apple-system, sans-serif;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -48,5 +48,5 @@ body {
 
 /* ── Display typography ───────────────────────────────────────────────────── */
 h1 {
-  font-family: var(--font-display), 'Georgia', 'Times New Roman', serif;
+  font-family: var(--font-display), system-ui, -apple-system, sans-serif;
 }

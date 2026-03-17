@@ -57,7 +57,7 @@ export default async function CaseStudyPage({ params }: Props) {
 
           <h1
             className="mb-4 text-3xl font-semibold leading-snug tracking-tight text-white sm:text-4xl"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-barlow), system-ui, sans-serif" }}
           >
             {study.title}
           </h1>

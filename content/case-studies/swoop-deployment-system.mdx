@@ -1,34 +1,36 @@
 ---
-title: "Regulated AI at Scale — GTM Positioning, Trust Architecture & Deployment Standards"
+title: "From Implementation-Heavy to Self-Serve: Platform Shift & Deployment Discipline at conversationHEALTH"
 company: "ConversationHealth"
 role: "Senior Director, Product"
 date: "2023-06"
-summary: "ConversationHealth deployed conversational AI on pharma brand websites — every deployment effectively a custom product. The GTM problem and the product problem were the same problem: without a trust architecture pharma clients could point to, we couldn't sell repeatability. And without repeatability, we couldn't scale."
+summary: "conversationHEALTH was the US market leader in conversational AI for pharma brand websites, built on NLP/NLU with 90-day deployment cycles. The cost problem and the scale problem were the same problem: without a generational platform shift — from implementation-led to self-serve — repeatability couldn't be sold and margin couldn't be reclaimed."
 impact:
   - "End-to-end deployment time dropped from ~90 days to 3 weeks"
-  - "MLR review cycle dropped from ~4 weeks to under 1 week"
+  - "Therapeutic area templating (top 50 Qs per TA) enabled initial agent launch within 3 weeks"
+  - "Self-serve platform allowed pharma brands to expand agent coverage independently"
   - "Compliance boundary, intake process, and release discipline turned bespoke delivery into a repeatable motion"
-  - "Trust architecture became the foundation that supported the acquisition and integration"
-tags: ["Regulated AI", "Pharma", "GTM", "Compliance", "Release Management", "Enterprise"]
+tags: ["Regulated AI", "Pharma", "Platform Strategy", "Compliance", "Release Management", "Enterprise"]
 artifacts: []
 ---
 
-ConversationHealth deployed conversational AI on pharma brand websites — answering patient and HCP questions about dosing, insurance coverage, side effects, and access programs. Every deployment was effectively a custom product: different drug, different brand team, different regulatory stakeholder set. The GTM problem and the product problem were the same problem: without a trust architecture that pharma clients could point to, we couldn't sell repeatability. And without repeatability, we couldn't scale.
+conversationHEALTH was the US market leader in conversational AI for pharma brand websites — deploying MLR-approved agents that answered HCP and patient questions across top-15 pharmaceutical brands. The platform was built on NLP, NLU, and industry-specific taxonomies, pre-dating large language models. Every deployment was implementation-heavy: a dedicated internal team handled all setup, onboarding, and configuration, and the average time-to-value was 90 days. Significant technical debt compounded the operational cost of each new brand. The cost problem and the scale problem were the same problem: without a generational platform shift — from implementation-led to self-serve — repeatability couldn't be sold and margin couldn't be reclaimed.
 
 ## What I Did
 
-**Defined what the product would and wouldn't do — and made that a selling point.** In regulated AI, guardrails aren't a limitation — they're the product. Codified the compliance boundary: what topics the agent could address, what triggered a fallback, what required MLR review, and what was off-limits. This was the trust infrastructure that made enterprise deals closeable.
+**Installed PM infrastructure and led the shift to a self-serve platform.** When I joined, there was no product management discipline. I established ICP clarity (US pharma medical affairs and medical information), defined discovery-to-delivery rhythm, and led the build of a new-generation self-serve AI platform — allowing pharma brands to own their own onboarding, configuration, and content expansion without implementation team involvement.
 
-**Built the deployment intake process from failure patterns backward.** Ran a retrospective across recent deployments and found three recurring failure modes: MLR surprises mid-sprint, mid-cycle change requests, and undefined launch criteria. Designed the intake template so every failure mode had a field.
+**Established the guardrails that made the platform sellable in regulated markets.** In regulated AI, guardrails aren't a limitation — they're the product. Codified the compliance boundary: what topics the agent could address, what triggered a fallback, what required MLR review, and what was off-limits. This was the trust infrastructure that made enterprise deals closeable.
 
-**Standardized the release note as the single communication artifact.** Defined a standard release note format with a compliance dimension, review-and-approval sequence, and client notification protocol. Reduced the review cycle from ~4 weeks to under 1 week.
+**Cut deployment time from 90 days to 3 weeks through therapeutic area templating.** Templating the top 50 questions per therapeutic area — leveraging existing brand and drug information — allowed an initial agent to be configured and ready for launch within three weeks. The self-serve platform then allowed brands to expand content coverage over time without implementation team involvement.
 
-**Formalized the cross-functional release discipline.** Release notes drafted → internal review → CS notified → release proceeds. Removed the calendar negotiation that had previously preceded every non-trivial release.
+**Built the deployment intake process from failure patterns backward.** Ran a retrospective across recent deployments and found three recurring failure modes: MLR surprises mid-sprint, mid-cycle change requests, and undefined launch criteria. Designed the intake template so every failure mode had a field. Formalized the release sequence: notes drafted → internal review → CS notified → release proceeds.
+
+**Established a product-engineering philosophy: launch value fast and often.** Collaborated with the VP of Engineering to separate the work of making product bets from the work of executing them. Product and business define the problems to solve; engineering gets dedicated, uninterrupted time to build the decided bets — without mid-sprint context switching.
 
 ## Outcome
 
-End-to-end deployment time dropped from ~90 days to 3 weeks — without rebuilding the product. The compliance boundary, intake process, and release discipline turned bespoke delivery into a repeatable motion that GTM could sell and ops could execute. MLR review cycle dropped from ~4 weeks to under 1 week. The trust architecture established here became the foundation that supported the acquisition and integration.
+End-to-end deployment time dropped from ~90 days to 3 weeks. The compliance boundary, intake process, and self-serve platform turned bespoke implementation into a repeatable motion that GTM could sell and ops could execute without rebuilding the product for each brand. Pharma brands gained the ability to launch within three weeks and expand their agent's coverage independently over time.
 
 ## Reflection
 
-The compliance boundary work — mapping approved topics, fallback triggers, and MLR implications per drug per brand — was entirely manual. Today I'd build an AI-assisted compliance scoping tool that takes drug labeling documents and brand brief inputs and auto-generates a draft approved topic list, flagging ambiguous areas for human review. This compresses the pre-launch intake process from days to hours and surfaces regulatory edge cases earlier — before they become mid-sprint surprises. The trust architecture doesn't change. The speed at which you instantiate it per deployment does.
+The compliance boundary work — mapping approved topics, fallback triggers, and MLR implications per drug per brand — was entirely manual. Today I'd build an AI-assisted compliance scoping tool that takes drug labeling documents and brand brief inputs and auto-generates a draft approved topic list, flagging ambiguous areas for human review. This compresses the pre-launch intake process from days to hours and surfaces regulatory edge cases earlier — before they become mid-sprint surprises. The architecture doesn't change. The speed at which you instantiate it per deployment does.

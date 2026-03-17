@@ -109,7 +109,7 @@ export const caseStudies: CaseStudy[] = [
       },
       {
         bold: "Secured enterprise and government adoption through delivery credibility.",
-        body: "Walmart Canada (337 locations), Newfoundland & Labrador provincial contract, and US county health deployments were won on the back of a platform that demonstrably shipped on time and held up under scale.",
+        body: "Walmart Canada (337 locations), government contracts in Newfoundland & Labrador and Quebec (via Quebec Hub Innovation, giving access to all Quebec clinic providers), and US county health deployments were won on the back of a platform that demonstrably shipped on time and held up under scale.",
       },
     ],
     visual: {
@@ -157,14 +157,14 @@ export const caseStudies: CaseStudy[] = [
         },
       ],
       metrics: [
-        { value: "6M+", label: "Patients Served" },
+        { value: "6M+", label: "Patients Across Platform" },
         { value: "337", label: "Walmart Locations" },
         { value: "2", label: "Countries" },
         { value: "9", label: "EMR Integrations" },
       ],
     },
     outcome:
-      "Launched across Canada and the US during peak pandemic deployment. Platform supported 6M+ patients and 2,200+ healthcare facilities. Delivered digital proof of immunization, adverse reaction reporting, and government-reporting outputs across multiple regulatory jurisdictions, on a timeline that required deliberate scope sequencing at every sprint.",
+      "Launched across Canada and the US during peak pandemic deployment. Pomelo's platform — across all products — reached 6M+ patients and 2,200+ healthcare facilities. The vaccine platform contributed meaningfully to that scale, delivering digital proof of immunization, adverse reaction reporting, and government-reporting outputs across multiple regulatory jurisdictions, on a timeline that required deliberate scope sequencing at every sprint.",
     aiReflection:
       "The hardest coordination problem was cross-jurisdictional compliance mapping — manually tracking state-by-state and provincial rule variance. Today I'd use an AI-assisted compliance discovery layer to surface rule conflicts early and automatically flag scope implications, compressing what took weeks of manual research into days. On the patient side, conversational triage for eligibility verification would replace the form-heavy intake flow — reducing drop-off and clinic staff burden simultaneously.",
     tags: [
@@ -184,7 +184,7 @@ export const caseStudies: CaseStudy[] = [
     title:
       "Building the Product Organization: First Hire to Full Org, Series A Through Acquisition",
     role: "Director of Product · First Product Hire",
-    lede: "I joined Pomelo in 2015 as the first dedicated product hire when the company was pre-Series A, with a founder-led product process, a single legacy platform, and no PM discipline to speak of. Over six years, the product organization grew to a multi-team structure across three product streams, 9 EMR integrations, and deployments across Canadian provinces and US states.",
+    lede: "I joined Pomelo in 2015 as the first dedicated product hire when the company was pre-Series A, with a founder-led product process, a single legacy platform, and no PM discipline to speak of. Over six years, the product organization grew to a multi-team structure across three product streams, 9 EMR integrations (8 Canadian EMRs and Practice Fusion in the US), and deployments across Canadian provinces and US markets.",
     ledeBold:
       "The org build wasn't separate from the product build. They were the same problem.",
     bullets: [
@@ -198,11 +198,11 @@ export const caseStudies: CaseStudy[] = [
       },
       {
         bold: "Made the Series B growth case legible through architecture decisions.",
-        body: "The Ellkay partnership (75% of the US market through 750+ EHR/PM integrations) only became a business lever because the platform had been built API-first with clean integration boundaries. The product choices that enabled the $20M Series B were deliberate, not accidental.",
+        body: "The Ellkay partnership — a commercialization channel giving Pomelo's sales team access to Ellkay's network of 750+ EHR/PM systems covering ~75% of the US market — only became a viable business lever because the platform had been built API-first with clean integration boundaries. The product choices that enabled the $20M Series B were deliberate, not accidental.",
       },
       {
         bold: "Ran the org through two simultaneous crises without losing the roadmap.",
-        body: "The pandemic arrived while we were mid-expansion into the US market. Triaged in real time: vaccine platform got dedicated focus; US expansion scoped to contractual minimums; MagicSeat optimization deprioritized. Every deferral documented, nothing lost, just sequenced.",
+        body: "The pandemic arrived while we were expanding into the US market via vaccine OAB and MagicSeat. Triaged in real time: vaccine platform got dedicated focus; US expansion scoped to contractual minimums; MagicSeat optimization deprioritized. Every deferral documented, nothing lost, just sequenced.",
       },
       {
         bold: "Built a team and culture that transferred cleanly through acquisition.",
@@ -242,7 +242,7 @@ export const caseStudies: CaseStudy[] = [
             "Series A $3.5M",
             "Walmart Canada 337 loc.",
             "Ellkay partnership",
-            "Gov contracts QC + NL",
+            "Gov contracts NL + Quebec Hub",
             "Series B $20M",
             "Acquisition",
           ],
@@ -256,7 +256,7 @@ export const caseStudies: CaseStudy[] = [
       ],
     },
     outcome:
-      "Series A ($3.5M) to Series B ($20M) to acquisition by TELUS Health. Platform reached 6M patients, 16M communications exchanged, and 2,200+ healthcare facilities. The org and product architecture I built were central to the exit thesis.",
+      "Series A ($3.5M) to Series B ($20M) to acquisition by TELUS Health. Platform reached 6M patients, 16M communications exchanged, and 2,200+ healthcare facilities across all products. The product org I built — team structure, operating cadence, and delivery track record — transferred cleanly through the acquisition.",
     aiReflection:
       "The bottleneck in scaling a product org is synthesis speed — turning customer feedback, usage data, and stakeholder input into clear prioritization signals. Today I'd instrument that loop with AI from day one: automated analysis of support tickets and usage patterns feeding into sprint planning context. For onboarding new PMs, I'd build an AI-powered knowledge base capturing product reasoning and decision history — so new team members inherit the \"why\" behind architecture choices, not just the \"what.\"",
     tags: [
@@ -268,13 +268,13 @@ export const caseStudies: CaseStudy[] = [
     ],
   },
   {
-    slug: "swoop-piper-ai-agent",
+    slug: "swoop-conversational-analytics-agent",
     number: "04",
     company: "Swoop",
     period: "2024",
-    title: "Conversational Analytics Agent for Pharma Brand Teams",
+    title: "Conversational Analytics Agent for Pharma Brand Transcript Data",
     role: "Director, Product Management",
-    lede: "Pharma brand teams were sitting on rich agent conversation data and couldn't use it. Surfacing insights required pulling raw logs, running analyst queries, and assembling monthly PPTX decks by hand, slow, expensive, and always a reporting cycle behind the decisions that needed to be made. The core tension: the people who most needed performance visibility were the least equipped to query raw data.",
+    lede: "Pharma brand teams were sitting on rich agent conversation data and couldn't use it. Surfacing insights required pulling raw logs, running analyst queries, and assembling monthly PPTX decks by hand — slow, expensive, and always a reporting cycle behind the decisions that needed to be made. Working with one data engineer, I built a conversational analytics agent: a way to have a direct conversation with the transcript data from a brand's AI agent on their website — asking questions about what patients and HCPs were actually saying, and getting answers in real time.",
     ledeBold:
       "I bet on conversation-first over dashboard-first, and that bet was the product.",
     bullets: [
@@ -283,8 +283,8 @@ export const caseStudies: CaseStudy[] = [
         body: 'Brand managers didn\'t want to query data. They wanted to ask follow-up questions. The version that worked led with outcomes ("Is my agent covering the questions patients actually have?") rather than metrics.',
       },
       {
-        bold: "Automated the monthly PPTX reporting cycle.",
-        body: "Built an automated pipeline that runs monthly by brand and agent pair. Eliminated the analyst reporting cycle for standard monthly reviews, shifting analyst time from assembly to interpretation and action.",
+        bold: "Contributed to the automated monthly reporting motion.",
+        body: "The broader reporting initiative included an automated pipeline running monthly by brand and agent pair. My contribution was defining the conversational layer that made insights accessible to brand managers without analyst mediation — shifting analyst time from assembly to interpretation.",
       },
       {
         bold: "Scoped data access strictly per-brand, per-agent.",
@@ -333,7 +333,7 @@ export const caseStudies: CaseStudy[] = [
         "Prompts that lead with the brand manager's outcome, not a metric, drove adoption. The UX insight was the product insight.",
     },
     outcome:
-      "Brand teams moved from analyst-mediated monthly reporting to on-demand self-service analytics. Automated pipeline made standard monthly reviews zero-analyst-effort. HVA CTA work opened a direct line from analytics insights to client campaign optimization decisions.",
+      "Brand teams gained on-demand access to transcript insights through a conversational interface, moving from analyst-assembled monthly reports to direct self-service queries against their agent's data. The model evaluation framework established a repeatable, documented process for AI version decisions — replacing ad hoc model comparisons with a structured approach the team could run independently.",
     aiReflection:
       "The model evaluation framework I built was manual by necessity. Today I'd instrument a continuous evaluation pipeline that runs model comparisons on a representative prompt set automatically on every model update, surfacing regressions before they reach clients. The conversation starter UX iteration loop — which took multiple rounds with real users — could be accelerated with synthetic user testing against representative brand manager personas, compressing weeks of qualitative research into days.",
     tags: ["AI/ML", "Pharma", "Analytics", "Conversational AI", "B2B SaaS"],
@@ -344,27 +344,31 @@ export const caseStudies: CaseStudy[] = [
     company: "ConversationHealth",
     period: "2021–2023",
     title:
-      "Regulated AI at Scale: GTM Positioning, Trust Architecture & Deployment Standards",
+      "From Implementation-Heavy to Self-Serve: Platform Shift & Deployment Discipline at conversationHEALTH",
     role: "Senior Director, Product",
-    lede: "ConversationHealth deployed conversational AI on pharma brand websites, answering patient and HCP questions about dosing, insurance coverage, side effects, and access programs. Every deployment was effectively a custom product: different drug, different brand team, different regulatory stakeholder set.",
+    lede: "conversationHEALTH was the US market leader in conversational AI for pharma brand websites — deploying MLR-approved agents that answered HCP and patient questions across top-15 pharmaceutical brands. The platform was built on NLP, NLU, and industry-specific taxonomies, pre-dating large language models. Every deployment was implementation-heavy: a dedicated internal team handled all setup, onboarding, and configuration, and the average time-to-value was 90 days. Significant technical debt compounded the operational cost of each new brand.",
     ledeBold:
-      "The GTM problem and the product problem were the same problem: without a trust architecture that pharma clients could point to, we couldn't sell repeatability. And without repeatability, we couldn't scale.",
+      "The cost problem and the scale problem were the same problem: without a generational platform shift — from implementation-led to self-serve — repeatability couldn't be sold and margin couldn't be reclaimed.",
     bullets: [
       {
-        bold: "Defined what the product would and wouldn't do, and made that a selling point.",
-        body: "In regulated AI, guardrails aren't a limitation, they're the product. Codified the compliance boundary: what topics the agent could address, what triggered a fallback, what required MLR review, and what was off-limits. This was the trust infrastructure that made enterprise deals closeable.",
+        bold: "Installed PM infrastructure and led the shift to a self-serve platform.",
+        body: "When I joined, there was no product management discipline. I established ICP clarity (US pharma medical affairs and medical information), defined discovery-to-delivery rhythm, and led the build of a new-generation self-serve AI platform — allowing pharma brands to own their own onboarding, configuration, and content expansion without implementation team involvement.",
+      },
+      {
+        bold: "Established the guardrails that made the platform sellable in regulated markets.",
+        body: "In regulated AI, guardrails aren't a limitation — they're the product. Codified the compliance boundary: what topics the agent could address, what triggered a fallback, what required MLR review, and what was off-limits. This was the trust infrastructure that made enterprise deals closeable.",
+      },
+      {
+        bold: "Cut deployment time from 90 days to 3 weeks through therapeutic area templating.",
+        body: "Templating the top 50 questions per therapeutic area — leveraging existing brand and drug information — allowed an initial agent to be configured and ready for launch within three weeks. The self-serve platform then allowed brands to expand content coverage over time without implementation team involvement.",
       },
       {
         bold: "Built the deployment intake process from failure patterns backward.",
-        body: "Ran a retrospective across recent deployments and found three recurring failure modes: MLR surprises mid-sprint, mid-cycle change requests, and undefined launch criteria. Designed the intake template so every failure mode had a field.",
+        body: "Ran a retrospective across recent deployments and found three recurring failure modes: MLR surprises mid-sprint, mid-cycle change requests, and undefined launch criteria. Designed the intake template so every failure mode had a field. Formalized the release sequence: notes drafted → internal review → CS notified → release proceeds.",
       },
       {
-        bold: "Standardized the release note as the single communication artifact.",
-        body: "Defined a standard release note format with a compliance dimension, review-and-approval sequence, and client notification protocol. Reduced the review cycle from ~4 weeks to under 1 week.",
-      },
-      {
-        bold: "Formalized the cross-functional release discipline.",
-        body: "Release notes drafted → internal review → CS notified → release proceeds. Removed the calendar negotiation that had previously preceded every non-trivial release.",
+        bold: "Established a product-engineering philosophy: launch value fast and often.",
+        body: "Collaborated with the VP of Engineering to separate the work of making product bets from the work of executing them. Product and business define the problems to solve; engineering gets dedicated, uninterrupted time to build the decided bets — without mid-sprint context switching.",
       },
     ],
     visual: {
@@ -373,7 +377,7 @@ export const caseStudies: CaseStudy[] = [
       company: "CONVERSATIONHEALTH · PRE-ENGINEERING GATE",
       stamp: "REQUIRED BEFORE ENG CONFIG",
       description:
-        "Every field in this template exists because its absence caused a mid-sprint failure. No deployment proceeds to engineering configuration until this document is complete.",
+        "Every field in this template exists because its absence caused a mid-sprint failure. Part of the platform shift to self-serve: no deployment proceeds to engineering configuration until this document is complete — by the brand team, not the implementation team.",
       sections: [
         {
           number: "01",
@@ -409,7 +413,7 @@ export const caseStudies: CaseStudy[] = [
       ],
     },
     outcome:
-      "End-to-end deployment time dropped from ~90 days to 3 weeks, without rebuilding the product. The compliance boundary, intake process, and release discipline turned bespoke delivery into a repeatable motion that GTM could sell and ops could execute. MLR review cycle dropped from ~4 weeks to under 1 week. The trust architecture established here became the foundation that supported the acquisition and integration.",
+      "End-to-end deployment time dropped from ~90 days to 3 weeks. The compliance boundary, intake process, and self-serve platform turned bespoke implementation into a repeatable motion that GTM could sell and ops could execute without rebuilding the product for each brand. Pharma brands gained the ability to launch within three weeks and expand their agent's coverage independently over time.",
     aiReflection:
       "The compliance boundary work — mapping approved topics, fallback triggers, and MLR implications per drug per brand — was entirely manual. Today I'd build an AI-assisted compliance scoping tool that takes drug labeling documents and brand brief inputs and auto-generates a draft approved topic list, flagging ambiguous areas for human review. This compresses the pre-launch intake process from days to hours and surfaces regulatory edge cases earlier — before they become mid-sprint surprises. The trust architecture doesn't change. The speed at which you instantiate it per deployment does.",
     tags: [

@@ -8,7 +8,7 @@ const impactCards = [
     slug: "swoop-deployment-system",
     tag: "Regulated AI · Pharma",
     headline: "Bespoke to repeatable. Deployment time cut from 90 days to 3 weeks.",
-    body: "ConversationHEALTH had no standard for what \"launch-ready\" meant across pharma brands. I built the compliance boundary, deployment intake process, and release discipline that turned every custom engagement into a repeatable motion and became the trust foundation that supported the acquisition.",
+    body: "conversationHEALTH's NLP/NLU platform required a full implementation team for every pharma brand deployment. I led the platform generation shift to self-serve — therapeutic area templating, compliance guardrails, and deployment intake discipline — turning 90-day engagements into 3-week launches.",
     hasStudy: true,
   },
   {
@@ -21,8 +21,8 @@ const impactCards = [
   {
     slug: "pomelo-vaccine-platform",
     tag: "0→1 · Canada & US Launch",
-    headline: "6M patients. 2,200+ facilities. Shipped under pandemic conditions.",
-    body: "The scheduling platform wasn't built for mass vaccine deployment. I sequenced the build around three non-negotiable constraints: patient safety, dose adherence, and compliance reporting, and deferred everything else. Walmart Canada (337 locations), a provincial government contract, and US county health deployments followed.",
+    headline: "Walmart Canada. Government contracts. US county health. Shipped under pandemic conditions.",
+    body: "The scheduling platform wasn't built for mass vaccine deployment. I sequenced the build around three non-negotiable constraints: patient safety, dose adherence, and compliance reporting, and deferred everything else. Walmart Canada (337 locations), government contracts in Newfoundland & Labrador and Quebec, and US county health deployments followed.",
     hasStudy: true,
   },
 ];
@@ -47,12 +47,14 @@ export default function Home() {
         <div className="relative mx-auto max-w-2xl px-6 pt-24 pb-24 sm:pt-32 sm:pb-32">
           <h1
             className="mb-6 text-4xl font-semibold leading-[1.15] tracking-tight text-white sm:text-5xl"
-            style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ fontFamily: "var(--font-barlow), system-ui, sans-serif" }}
           >
-            Enterprise deployments that actually ship and stick.
+            Outcomes over outputs.<br />
+            Designed for users.<br />
+            Built for the business.
           </h1>
           <p className="mb-10 text-lg leading-relaxed text-white/70">
-            I build the ICP discipline, guardrails, and adoption motion that turn bespoke delivery into a repeatable business in regulated healthcare and pharma.
+            UX roots, product leadership discipline. I work at the intersection of user obsession and business delivery — building ICP clarity, compliance guardrails, and adoption architecture in regulated healthcare and pharma.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
             <Link

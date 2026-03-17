@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 
 export default function AboutPage() {
@@ -21,7 +19,7 @@ export default function AboutPage() {
 
             <h1
               className="text-4xl font-semibold leading-[1.15] tracking-tight text-white sm:text-5xl"
-              style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
+              style={{ fontFamily: "var(--font-barlow), system-ui, sans-serif" }}
             >
               Regulated Enterprise Builder. Systems Thinker. Execution Discipline.
             </h1>
