@@ -15,7 +15,7 @@ const impactCards = [
     slug: "pomelo-product-org",
     tag: "0→1 Org Build · Series A → Acquisition",
     headline: "First product hire. $3.5M to $20M to acquired.",
-    body: "I joined Pomelo with no PM practice, one legacy platform, and a founder-led roadmap. Over six years I built the team, the operating cadence, and the architecture decisions that made the Series B case legible and delivered a product org that transferred cleanly through acquisition by TELUS Health.",
+    body: "Joined as the first product hire — one legacy platform, a handful of people, no PM practice. Over six years, helped grow the team from one to ten, through two funding rounds and an eventual acquisition by TELUS Health. Clinics still use the products today.",
     hasStudy: true,
   },
   {
