@@ -157,9 +157,12 @@ export default function AboutPage() {
             ))}
           </div>
 
-          <p className="text-xs mt-8" style={{ color: "#999" }}>
-            CliftonStrengths Top 5: Achiever &middot; Learner &middot; Relator &middot; Arranger &middot; Futuristic
-          </p>
+          <div className="mt-8 flex flex-wrap items-center gap-2">
+            <span className="text-xs font-medium" style={{ color: "#999" }}>CliftonStrengths Top 5:</span>
+            {["Achiever", "Learner", "Relator", "Arranger", "Futuristic"].map((s) => (
+              <span key={s} className="text-xs px-3 py-1 rounded-full border border-zinc-200 text-[#555]">{s}</span>
+            ))}
+          </div>
 
         </div>
       </section>
