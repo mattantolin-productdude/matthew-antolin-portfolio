@@ -8,7 +8,7 @@ const impactCards = [
     slug: "swoop-deployment-system",
     tag: "Regulated AI · Pharma",
     headline: "Bespoke to repeatable. Deployment time cut from 90 days to 3 weeks.",
-    body: "conversationHEALTH's NLP/NLU platform required a full implementation team for every pharma brand deployment. I led the platform generation shift to self-serve — therapeutic area templating, compliance guardrails, and deployment intake discipline — turning 90-day engagements into 3-week launches.",
+    body: "conversationHEALTH's NLP/NLU platform required a dedicated implementation team behind every pharma brand deployment. The move to self-serve was built on therapeutic area templating, GxP implementation guardrails, and deployment intake discipline — turning a bespoke, high-touch process into something GTM could sell and ops could execute at scale.",
     hasStudy: true,
   },
   {
