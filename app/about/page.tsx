@@ -121,6 +121,50 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* ── HOW I'M WIRED ────────────────────────────────────────────────── */}
+      <section className="bg-[#1a1a1a] py-24 px-6 md:px-16">
+        <div className="max-w-5xl mx-auto">
+
+          <span
+            className="block text-xs tracking-[0.25em] uppercase font-medium mb-12"
+            style={{ color: "#9A7B2E" }}
+          >
+            How I&rsquo;m Wired
+          </span>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                title: "Arranger",
+                body: "I naturally see how the pieces fit together. Put 12 stakeholders, 3 product surfaces, and an impossible deadline in a room — that's when I get energized, not anxious. I don't protect plans. I optimize configurations until the path forward becomes obvious.",
+              },
+              {
+                title: "Futuristic",
+                body: "I can hold the long-term picture clearly enough that the team doesn't have to. My job is to make the destination vivid enough that daily decisions become easy. People tend to look to me for that picture, especially when the present feels messy.",
+              },
+              {
+                title: "Achiever",
+                body: "Every day starts at zero for me. That's not a complaint — it's how I'm built. It means I set the pace, I don't wait for it. It also means I don't coast after a win. The fire just rekindles.",
+              },
+            ].map((card) => (
+              <div
+                key={card.title}
+                className="rounded-2xl p-8 flex flex-col gap-4 border border-white/10 hover:border-[#9A7B2E]/40 transition-colors duration-300"
+                style={{ backgroundColor: "#242424" }}
+              >
+                <h3 className="text-white text-xl font-bold">{card.title}</h3>
+                <p className="text-[#aaa] leading-relaxed text-sm">{card.body}</p>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-xs mt-8" style={{ color: "#555" }}>
+            CliftonStrengths Top 5: Achiever &middot; Learner &middot; Relator &middot; Arranger &middot; Futuristic
+          </p>
+
+        </div>
+      </section>
+
       {/* ── LINKS ────────────────────────────────────────────────────────── */}
       <section className="bg-[#F2F1EF] py-20 px-6">
         <div className="max-w-2xl mx-auto flex flex-col items-start gap-6">
