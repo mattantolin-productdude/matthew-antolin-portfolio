@@ -122,7 +122,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── HOW I'M WIRED ────────────────────────────────────────────────── */}
-      <section className="bg-[#1a1a1a] py-24 px-6 md:px-16">
+      <section className="bg-white py-24 px-6 md:px-16">
         <div className="max-w-5xl mx-auto">
 
           <span
@@ -149,16 +149,15 @@ export default function AboutPage() {
             ].map((card) => (
               <div
                 key={card.title}
-                className="rounded-2xl p-8 flex flex-col gap-4 border border-white/10 hover:border-[#9A7B2E]/40 transition-colors duration-300"
-                style={{ backgroundColor: "#242424" }}
+                className="rounded-2xl p-8 flex flex-col gap-4 border border-zinc-200 hover:border-[#9A7B2E]/60 transition-colors duration-300 bg-white shadow-sm"
               >
-                <h3 className="text-white text-xl font-bold">{card.title}</h3>
-                <p className="text-[#aaa] leading-relaxed text-sm">{card.body}</p>
+                <h3 className="text-[#1a1a1a] text-xl font-bold">{card.title}</h3>
+                <p className="text-[#555] leading-relaxed text-sm">{card.body}</p>
               </div>
             ))}
           </div>
 
-          <p className="text-xs mt-8" style={{ color: "#555" }}>
+          <p className="text-xs mt-8" style={{ color: "#999" }}>
             CliftonStrengths Top 5: Achiever &middot; Learner &middot; Relator &middot; Arranger &middot; Futuristic
           </p>
 
