@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Barlow } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import Nav from "@/app/components/Nav";
 
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body className={`${barlow.variable}`}>
         <Nav />
         {children}
+        <Analytics />
       </body>
     </html>
   );
