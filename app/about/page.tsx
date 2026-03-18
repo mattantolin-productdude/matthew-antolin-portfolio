@@ -33,7 +33,7 @@ export default function AboutPage() {
       <section className="max-w-2xl mx-auto px-6 md:px-8 py-24 flex flex-col gap-8">
 
         <p className="text-lg leading-relaxed text-[#3a3a3a]">
-          In healthcare and pharma, the person who buys the product is never the person who uses it. The enterprise team signs the contract. The patient, caregiver, nurse, or HCP actually shows up every day. I&rsquo;ve spent a decade building for both &mdash; winning the business case with one audience, earning daily adoption from the other.
+          In healthcare and pharma, the person who buys the product is rarely the person who uses it. The enterprise team signs the contract. The patient, caregiver, nurse, or HCP actually shows up every day. I&rsquo;ve spent a decade building for both &mdash; winning the business case with one audience, earning daily adoption from the other.
         </p>
 
         <p className="text-lg leading-relaxed text-[#3a3a3a]">
