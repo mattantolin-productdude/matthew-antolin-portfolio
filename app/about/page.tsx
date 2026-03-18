@@ -53,7 +53,7 @@ export default function AboutPage() {
         </p>
 
         <p className="text-lg leading-relaxed text-[#3a3a3a]">
-          Outside of work: I coach softball, lose gracefully at golf, share my home with Biggie Smalls the French Bulldog, and have been fundraising for JDRF for 18 years. The last part makes sense &mdash; I&rsquo;ve been living with Type 1 diabetes for a long time.
+          Outside of work: I coach U11 girls softball — my two daughters play on the team. Biggie Smalls the French Bulldog runs the house. I&rsquo;ve been fundraising for JDRF for 18 years, which makes sense given that I&rsquo;ve been living with Type 1 diabetes since I was a kid. When I&rsquo;m not on a ball diamond or a hockey rink, I&rsquo;m reading or making art — usually in that order.
         </p>
 
       </section>
