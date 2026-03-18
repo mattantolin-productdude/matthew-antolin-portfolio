@@ -21,7 +21,7 @@ export default function AboutPage() {
               className="text-4xl font-semibold leading-[1.15] tracking-tight text-white sm:text-5xl"
               style={{ fontFamily: "var(--font-barlow), system-ui, sans-serif" }}
             >
-              Two Users, One Product Strategy. The Buyer Gets the Business Case. The Patient Gets the Product.
+              Two Users, One Product Strategy. Sell to the enterprise. Earn adoption from the patient.
             </h1>
 
           </div>
