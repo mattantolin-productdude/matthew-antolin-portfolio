@@ -21,7 +21,7 @@ export default function AboutPage() {
               className="text-4xl font-semibold leading-[1.15] tracking-tight text-white sm:text-5xl"
               style={{ fontFamily: "var(--font-barlow), system-ui, sans-serif" }}
             >
-              Regulated Enterprise Builder. Systems Thinker. Execution Discipline.
+              Two Users, One Product Strategy. The Buyer Gets the Business Case. The Patient Gets the Product.
             </h1>
 
           </div>
@@ -33,23 +33,29 @@ export default function AboutPage() {
       <section className="max-w-2xl mx-auto px-6 md:px-8 py-24 flex flex-col gap-8">
 
         <p className="text-lg leading-relaxed text-[#3a3a3a]">
-          I treat compliance constraints, fragmented EHR ecosystems, and enterprise procurement
-          cycles as product design inputs, not obstacles. Most regulated environments have been
-          burned by products that shipped but didn&rsquo;t stick. My track record is in the other
-          direction: 0&rarr;1 and scale-up contexts where ambiguous mandates become durable systems
-          with measurable adoption and the operational infrastructure to expand.
+          In healthcare and pharma, the person who buys the product is never the person who uses it. The enterprise team signs the contract. The patient, caregiver, nurse, or HCP actually shows up every day. I&rsquo;ve spent a decade building for both &mdash; winning the business case with one audience, earning daily adoption from the other.
         </p>
 
         <p className="text-lg leading-relaxed text-[#3a3a3a]">
-          I&rsquo;ve led product at Swoop, conversationHEALTH, and Pomelo Health, across
-          conversational AI, EHR integrations, patient scheduling, and analytics infrastructure.
-          A decade in healthcare, pharma, and life sciences.
+          That&rsquo;s meant owning two completely different product surfaces at the same time. On one side: the platform and data infrastructure that customer teams use to configure, launch, and measure their deployments. On the other: the patient- and HCP-facing products those deployments power. Mobile apps that let patients skip the waiting room. Online booking running at clinical scale. Conversational agents fielding HCP medical information queries on pharma brand sites before most companies had heard of a large language model. And DTC patient engagement tools that capture behavioral signals no one was collecting before.
         </p>
 
         <p className="text-lg leading-relaxed text-[#3a3a3a]">
-          I&rsquo;m based in Montreal, targeting VP Product or Director Product roles in regulated
-          enterprise SaaS. Open to Canada/US remote; willing to relocate for the right fit.
+          The connecting thread is the feedback loop between them. When adoption data from the user-facing product informs how the customer team configures the platform, the whole system gets smarter. I&rsquo;ve always built toward that flywheel.
         </p>
+
+        <p className="text-lg leading-relaxed text-[#3a3a3a]">
+          I operate at the intersection of strategy and execution &mdash; not one or the other. I think clearly in complexity, lead people as much as product, and get things done when the environment is messy.
+        </p>
+
+        <p className="text-lg leading-relaxed text-[#3a3a3a]">
+          I led product at Swoop, conversationHEALTH, and Pomelo Health &mdash; across conversational AI, EHR integrations, patient scheduling, and analytics infrastructure. A decade in healthcare, pharma, and life sciences. Based in Montreal. Targeting VP Product or Director Product roles in regulated enterprise SaaS. Open to Canada/US remote.
+        </p>
+
+        <p className="text-lg leading-relaxed text-[#3a3a3a]">
+          Outside of work: I coach softball, lose gracefully at golf, share my home with Biggie Smalls the French Bulldog, and have been fundraising for JDRF for 18 years. The last part makes sense &mdash; I&rsquo;ve been living with Type 1 diabetes for a long time.
+        </p>
+
       </section>
 
       {/* ── HOW I WORK ───────────────────────────────────────────────────── */}
@@ -65,32 +71,38 @@ export default function AboutPage() {
           </span>
 
           {/* Cards grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
             {[
               {
                 num: "01",
-                title: "ICP Discipline",
+                title: "Sell to the Business, Build for the User",
                 body:
-                  "I start by narrowing the target. Not 'enterprise healthcare' but a specific buyer, stack, and motion. Loose ICP produces deployment chaos: too many one-offs, no replicable playbook. Tight ICP is the highest-leverage PM decision made before the first sprint.",
+                  "The buyer and the end user almost never have the same problem. The enterprise team wants compliance, deployment speed, and measurable ROI. The patient or HCP wants something that fits how they already work. I hold both in the room at the same time — and I don't let one crowd out the other. That's where most regulated products fall apart.",
               },
               {
                 num: "02",
-                title: "Guardrails",
+                title: "ICP Before Sprint One",
                 body:
-                  "Before sprint one: define what the product will and won't do, what regulatory constraints apply, and where the failure modes are. In HIPAA-adjacent, formulary-governed, or regulated-content contexts, guardrails aren't bureaucracy; they're the product.",
+                  "Not 'enterprise healthcare' — a specific buyer, stack, and motion. Loose ICP produces deployment chaos: too many one-offs, no replicable playbook. Tight ICP is the highest-leverage PM decision made before any code is written.",
               },
               {
                 num: "03",
-                title: "Deployment Architecture",
+                title: "Guardrails as Product Design",
                 body:
-                  "Enterprise products fail in the gap between signed contract and live deployment. I design the onboarding motion, integration contracts, and rollout gates before sprint one, so the first deployment becomes the template, not the exception.",
+                  "Before sprint one: define what the product will and won't do, what regulatory constraints apply, and where the failure modes are. In HIPAA-adjacent, formulary-governed, or regulated-content contexts, guardrails aren't bureaucracy. They're the product.",
               },
               {
                 num: "04",
+                title: "Deployment Architecture",
+                body:
+                  "Enterprise products fail in the gap between contract and live deployment. I design the onboarding motion, integration contracts, and rollout gates before sprint one, so the first customer deployment becomes the template — not the exception.",
+              },
+              {
+                num: "05",
                 title: "Measurable Adoption",
                 body:
-                  "A feature shipped is not a feature adopted. I instrument from day one: activation events, engagement signals, outcome metrics, and define what 'working' looks like before we build it. Success is behavior change, not a release note.",
+                  "A feature shipped is not a feature adopted. I instrument from day one: activation events, engagement signals, outcome metrics. And I define what 'working' looks like before we build it. Success is behavior change, not a release note.",
               },
             ].map((card) => (
               <div
