@@ -14,7 +14,7 @@ const studies = [
     logoAlt: "Swoop",
     title: "Conversational Analytics Agent for Pharma Brand Transcript Data",
     description:
-      "Pharma brand teams were locked out of their own agent data, buried in monthly analyst-assembled reports. Built a conversational analytics agent — with one data engineer — that lets brand managers query first-party transcript data on-demand, moving from lag reporting to direct self-service insights.",
+      "Pharma brand managers had rich agent conversation data but no intuitive way to interrogate it. Surfacing insights meant waiting on analysts to pull logs, run queries, and assemble monthly reports. Built a conversational analytics agent — with one data engineer — that lets brand managers ask direct questions of their agent's transcript data and get answers in real time, no analyst required.",
     imageSrc: "/images/case-studies/swoop-analytics.png",
     imageAlt: "Swoop conversational analytics interface",
     invertLayout: false,
