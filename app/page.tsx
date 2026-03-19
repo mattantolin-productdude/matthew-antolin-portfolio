@@ -43,7 +43,7 @@ export default function Home() {
           className="object-cover object-center"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-black/20" />
         <div className="relative mx-auto max-w-2xl px-6 pt-24 pb-24 sm:pt-32 sm:pb-32">
           <h1
             className="mb-6 text-4xl font-semibold leading-[1.15] tracking-tight text-white sm:text-5xl"
