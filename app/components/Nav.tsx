@@ -25,7 +25,7 @@ export default function Nav() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
 
         {/* Wordmark */}
-        <Link href="/" className="text-sm font-bold tracking-tight text-primary hover:text-amber transition-colors">
+        <Link href="/" className="text-sm font-medium tracking-tight text-primary hover:text-amber transition-colors">
           Matthew Antolin
         </Link>
 
