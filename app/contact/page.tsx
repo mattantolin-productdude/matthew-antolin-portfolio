@@ -29,13 +29,20 @@ const links = [
 export default function Contact() {
   return (
     <main className="min-h-screen bg-white font-sans text-zinc-900">
-      <section className="mx-auto max-w-2xl px-6 pt-24 pb-28">
-        <p className="mb-6 text-xs font-semibold uppercase tracking-widest text-amber">
-          Contact
-        </p>
-        <h1 className="mb-4 text-3xl font-semibold leading-snug tracking-tight text-zinc-900 sm:text-4xl">
-          Let&rsquo;s talk.
-        </h1>
+
+      {/* ── HEADER ───────────────────────────────────────────────────────── */}
+      <section style={{ backgroundColor: "#1a1a1a" }}>
+        <div className="mx-auto max-w-5xl px-6 pt-28 pb-14">
+          <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-amber">
+            Contact
+          </p>
+          <h1 className="text-3xl font-semibold leading-snug tracking-tight text-white sm:text-4xl">
+            Let&rsquo;s talk.
+          </h1>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-2xl px-6 pt-16 pb-28">
         <p className="mb-12 max-w-md text-base leading-relaxed text-zinc-500">
           Open to VP Product and Director Product conversations in regulated
           enterprise SaaS: health IT, pharma digital enablement, and adjacent.
