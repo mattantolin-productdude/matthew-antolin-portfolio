@@ -18,7 +18,7 @@ export default function AboutPage() {
             </span>
 
             <h1
-              className="text-4xl font-semibold leading-[1.15] tracking-tight text-white sm:text-5xl"
+              className="text-3xl font-semibold leading-snug tracking-tight text-white sm:text-4xl"
               style={{ fontFamily: "var(--font-barlow), system-ui, sans-serif" }}
             >
               Two Users, One Product Strategy. Sell to the enterprise. Earn adoption from the patient.
